@@ -191,3 +191,22 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/HelloWorld/sr
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
 !SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2019-02-06 18:51:36.056
 !MESSAGE Cannot determine URI for '/HelloWorld/src/HelloWorld.cpp'.
+!SESSION 2019-02-06 20:33:15.546 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-06 20:35:34.106
+!MESSAGE Indexed 'Assignment1' (1 sources, 0 headers) in 0.402 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-06 20:35:50.830
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-06 20:35:50.831
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-06 20:35:50.831
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
