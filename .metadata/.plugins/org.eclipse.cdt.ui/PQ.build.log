@@ -1,0 +1,20 @@
+18:49:24 **** Incremental Build of configuration Release for project PQ ****
+make all 
+Building file: ../src/Hospital.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hospital.d" -MT"src/Hospital.o" -o "src/Hospital.o" "../src/Hospital.cpp"
+Finished building: ../src/Hospital.cpp
+ 
+Building file: ../src/PQ_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PQ_IMP.d" -MT"src/PQ_IMP.o" -o "src/PQ_IMP.o" "../src/PQ_IMP.cpp"
+Finished building: ../src/PQ_IMP.cpp
+ 
+Building target: PQ
+Invoking: GCC C++ Linker
+g++  -o "PQ"  ./src/Hospital.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: PQ
+ 
+
+18:49:25 Build Finished (took 1s.76ms)
+
