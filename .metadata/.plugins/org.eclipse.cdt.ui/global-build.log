@@ -1,9 +1,230 @@
-20:38:31 **** Incremental Build of configuration Debug for project Assignment1 ****
+19:49:18 **** Incremental Build of configuration Release for project Assignment1 ****
 make all 
 make: Nothing to be done for 'all'.
-20:38:39 **** Incremental Build of configuration Debug for project Assignment1 ****
+19:49:27 **** Incremental Build of configuration Debug for project Assignment1 ****
 make all 
 make: Nothing to be done for 'all'.
-20:38:49 **** Incremental Build of configuration Debug for project Assignment1 ****
+19:49:37 **** Incremental Build of configuration Debug for project Assignment1 ****
 make all 
 make: Nothing to be done for 'all'.
+19:49:51 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:01 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/STACKLL_IMP.cpp:10:0,
+                 from ../src/Assignment1.cpp:11:
+../src/LL_IMP.cpp: In member function ‘T SLL<T>::getdata(int) [with T = int]’:
+../src/LL_IMP.cpp:82:10: warning: ‘B’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return B;
+          ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building file: ../src/STACKLL_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/STACKLL_IMP.d" -MT"src/STACKLL_IMP.o" -o "src/STACKLL_IMP.o" "../src/STACKLL_IMP.cpp"
+Finished building: ../src/STACKLL_IMP.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment1
+ 
+19:56:26 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/STACKLL_IMP.cpp:10:0,
+                 from ../src/Assignment1.cpp:11:
+../src/LL_IMP.cpp: In member function ‘T SLL<T>::getdata(int) [with T = int]’:
+../src/LL_IMP.cpp:82:10: warning: ‘B’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return B;
+          ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment1
+ 
+19:56:48 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/STACKLL_IMP.cpp:10:0,
+                 from ../src/Assignment1.cpp:11:
+../src/LL_IMP.cpp: In member function ‘T SLL<T>::getdata(int) [with T = int]’:
+../src/LL_IMP.cpp:82:10: warning: ‘B’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return B;
+          ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment1
+ 
+19:57:15 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:29 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:32 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:07 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:58 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/STACKLL_IMP.cpp:10:0,
+                 from ../src/Assignment1.cpp:11:
+../src/LL_IMP.cpp: In member function ‘T SLL<T>::getdata(int) [with T = int]’:
+../src/LL_IMP.cpp:82:10: warning: ‘B’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return B;
+          ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment1
+ 
+20:02:06 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+20:02:16 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:34 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:54 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+20:05:42 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/STACKLL_IMP.cpp:10:0,
+                 from ../src/Assignment1.cpp:11:
+../src/LL_IMP.cpp: In member function ‘T SLL<T>::getdata(int) [with T = int]’:
+../src/LL_IMP.cpp:82:10: warning: ‘B’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return B;
+          ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building file: ../src/LL_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LL_IMP.d" -MT"src/LL_IMP.o" -o "src/LL_IMP.o" "../src/LL_IMP.cpp"
+Finished building: ../src/LL_IMP.cpp
+ 
+Building file: ../src/STACKLL_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/STACKLL_IMP.d" -MT"src/STACKLL_IMP.o" -o "src/STACKLL_IMP.o" "../src/STACKLL_IMP.cpp"
+Finished building: ../src/STACKLL_IMP.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment1
+ 
+20:06:40 **** Incremental Build of configuration Release for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/Assignment1.cpp:11:0:
+../src/STACKLL_IMP.cpp: In member function ‘T Stack<T>::pop()’:
+../src/STACKLL_IMP.cpp:45:16: error: using template type parameter ‘T’ after ‘class’
+  return (class T)NULL;
+                ^
+src/subdir.mk:24: recipe for target 'src/Assignment1.o' failed
+make: *** [src/Assignment1.o] Error 1
+20:06:49 **** Incremental Build of configuration Release for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/STACKLL_IMP.cpp:10:0,
+                 from ../src/Assignment1.cpp:11:
+../src/LL_IMP.cpp: In member function ‘T Stack<T>::pop() [with T = int]’:
+../src/LL_IMP.cpp:138:7: warning: assuming signed overflow does not occur when assuming that (X - c) > X is always false [-Wstrict-overflow]
+  else if(ch<len-1 && ch>0){
+       ^~
+../src/LL_IMP.cpp:149:7: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+  else if(ch>=len-1){
+       ^~
+Finished building: ../src/Assignment1.cpp
+ 
+Building file: ../src/LL_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LL_IMP.d" -MT"src/LL_IMP.o" -o "src/LL_IMP.o" "../src/LL_IMP.cpp"
+Finished building: ../src/LL_IMP.cpp
+ 
+Building file: ../src/STACKLL_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/STACKLL_IMP.d" -MT"src/STACKLL_IMP.o" -o "src/STACKLL_IMP.o" "../src/STACKLL_IMP.cpp"
+Finished building: ../src/STACKLL_IMP.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment1
+ 
+20:06:56 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/STACKLL_IMP.cpp:10:0,
+                 from ../src/Assignment1.cpp:11:
+../src/LL_IMP.cpp: In member function ‘T SLL<T>::getdata(int) [with T = int]’:
+../src/LL_IMP.cpp:82:10: warning: ‘B’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return B;
+          ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building file: ../src/STACKLL_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/STACKLL_IMP.d" -MT"src/STACKLL_IMP.o" -o "src/STACKLL_IMP.o" "../src/STACKLL_IMP.cpp"
+Finished building: ../src/STACKLL_IMP.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment1
+ 
+20:07:54 **** Incremental Build of configuration Debug for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+In file included from ../src/STACKLL_IMP.cpp:10:0,
+                 from ../src/Assignment1.cpp:11:
+../src/LL_IMP.cpp: In member function ‘T SLL<T>::getdata(int) [with T = int]’:
+../src/LL_IMP.cpp:82:10: warning: ‘B’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return B;
+          ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building file: ../src/STACKLL_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/STACKLL_IMP.d" -MT"src/STACKLL_IMP.o" -o "src/STACKLL_IMP.o" "../src/STACKLL_IMP.cpp"
+Finished building: ../src/STACKLL_IMP.cpp
+ 
+Building target: Assignment1
+Invoking: GCC C++ Linker
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment1
+ 
