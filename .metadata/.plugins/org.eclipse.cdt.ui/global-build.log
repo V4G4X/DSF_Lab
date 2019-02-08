@@ -1,58 +1,181 @@
-01:17:19 **** Incremental Build of configuration Release for project Assignment4 ****
+11:45:22 **** Incremental Build of configuration Release for project Assignment5 ****
 make all 
-Building file: ../src/Assignment4.cpp
+Building file: ../src/Assignment5.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.o" -o "src/Assignment4.o" "../src/Assignment4.cpp"
-Finished building: ../src/Assignment4.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment5.d" -MT"src/Assignment5.o" -o "src/Assignment5.o" "../src/Assignment5.cpp"
+Finished building: ../src/Assignment5.cpp
  
-Building target: Assignment4
+Building target: Assignment5
 Invoking: GCC C++ Linker
-g++  -o "Assignment4"  ./src/Assignment4.o   
-Finished building target: Assignment4
+g++  -o "Assignment5"  ./src/Assignment5.o   
+Finished building target: Assignment5
  
-01:18:30 **** Incremental Build of configuration Release for project Assignment4 ****
+11:46:23 **** Incremental Build of configuration Release for project Assignment5 ****
 make all 
-Building file: ../src/Assignment4.cpp
+make: Nothing to be done for 'all'.
+11:46:27 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+make: Nothing to be done for 'all'.
+11:46:39 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+make: Nothing to be done for 'all'.
+11:46:59 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for 'all'.
+11:47:08 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for 'all'.
+11:47:16 **** Incremental Build of configuration Debug for project Assignment5 ****
+make all 
+make: Nothing to be done for 'all'.
+11:52:54 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/Assignment5.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment4.d" -MT"src/Assignment4.o" -o "src/Assignment4.o" "../src/Assignment4.cpp"
-In file included from ../src/Assignment4.cpp:10:0:
-../src/binarytree.cpp: In member function ‘void binary_tree<T>::createpre() [with T = char]’:
-../src/binarytree.cpp:118:4: warning: ‘m’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-    temp->lchild=s.pop();
-    ^~~~
-../src/binarytree.cpp:119:4: warning: ‘m’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-    temp->rchild=s.pop();
-    ^~~~
-../src/binarytree.cpp: In member function ‘void binary_tree<T>::createpost() [with T = char]’:
-../src/binarytree.cpp:78:4: warning: ‘m’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-    temp->rchild=s.pop();
-    ^~~~
-../src/binarytree.cpp:79:4: warning: ‘m’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-    temp->lchild=s.pop();
-    ^~~~
-../src/binarytree.cpp: In member function ‘void binary_tree<T>::postordern() [with T = char]’:
-../src/binarytree.cpp:188:4: warning: ‘previous’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-    if(temp->rchild==previous || temp->lchild==previous){ //if either of lchild or rchild already traced the take node as previous
-    ^~
-Finished building: ../src/Assignment4.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment5.d" -MT"src/Assignment5.o" -o "src/Assignment5.o" "../src/Assignment5.cpp"
+Finished building: ../src/Assignment5.cpp
  
-Building file: ../src/Linkedlist.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Linkedlist.d" -MT"src/Linkedlist.o" -o "src/Linkedlist.o" "../src/Linkedlist.cpp"
-Finished building: ../src/Linkedlist.cpp
- 
-Building file: ../src/binarytree.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/binarytree.d" -MT"src/binarytree.o" -o "src/binarytree.o" "../src/binarytree.cpp"
-Finished building: ../src/binarytree.cpp
- 
-Building file: ../src/stack.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/stack.d" -MT"src/stack.o" -o "src/stack.o" "../src/stack.cpp"
-Finished building: ../src/stack.cpp
- 
-Building target: Assignment4
+Building target: Assignment5
 Invoking: GCC C++ Linker
-g++  -o "Assignment4"  ./src/Assignment4.o ./src/Linkedlist.o ./src/binarytree.o ./src/stack.o   
-Finished building target: Assignment4
+g++  -o "Assignment5"  ./src/Assignment5.o   
+Finished building target: Assignment5
  
+11:53:12 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:32 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/BST_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
+In file included from ../src/BST_IMP.cpp:8:0:
+../src/BST_ADT.h:20:15: error: template argument required for ‘class BST’
+  friend class BST;
+               ^~~
+../src/BST_ADT.h:20:2: error: friend declaration does not name a class or function
+  friend class BST;
+  ^~~~~~
+../src/BST_IMP.cpp: In constructor ‘Node<T>::Node()’:
+../src/BST_IMP.cpp:12:2: error: ‘lchi’ was not declared in this scope
+  lchi
+  ^~~~
+../src/BST_IMP.cpp:12:2: note: suggested alternative: ‘lchild’
+  lchi
+  ^~~~
+  lchild
+make: *** [src/BST_IMP.o] Error 1
+src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
+12:09:59 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/BST_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
+In file included from ../src/BST_IMP.cpp:8:0:
+../src/BST_ADT.h:20:15: error: template argument required for ‘class BST’
+  friend class BST;
+               ^~~
+../src/BST_ADT.h:20:2: error: friend declaration does not name a class or function
+  friend class BST;
+  ^~~~~~
+src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
+make: *** [src/BST_IMP.o] Error 1
+12:10:59 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/BST_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
+In file included from ../src/BST_IMP.cpp:8:0:
+../src/BST_ADT.h:20:15: error: template argument required for ‘class BST’
+  friend class BST;
+               ^~~
+../src/BST_ADT.h:20:2: error: friend declaration does not name a class or function
+  friend class BST;
+  ^~~~~~
+src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
+make: *** [src/BST_IMP.o] Error 1
+12:11:08 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/BST_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
+Finished building: ../src/BST_IMP.cpp
+ 
+Building target: Assignment5
+Invoking: GCC C++ Linker
+g++  -o "Assignment5"  ./src/Assignment5.o ./src/BST_IMP.o   
+Finished building target: Assignment5
+ 
+12:19:03 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/BST_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
+../src/BST_IMP.cpp:25:34: error: ISO C++ forbids declaration of ‘mirror_fun’ with no type [-fpermissive]
+ Node<T>::mirror_fun(Node<T>* node){
+                                  ^
+../src/BST_IMP.cpp:25:1: error: prototype for ‘int Node<T>::mirror_fun(Node<T>*)’ does not match any in class ‘Node<T>’
+ Node<T>::mirror_fun(Node<T>* node){
+ ^~~~~~~
+In file included from ../src/BST_IMP.cpp:8:0:
+../src/BST_ADT.h:23:11: error: candidate is: Node<T>* Node<T>::mirror_fun(Node<T>*)
+  Node<T>* mirror_fun(Node* node);
+           ^~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
+make: *** [src/BST_IMP.o] Error 1
+12:24:03 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/BST_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
+../src/BST_IMP.cpp:25:34: error: ISO C++ forbids declaration of ‘mirror_fun’ with no type [-fpermissive]
+ Node<T>::mirror_fun(Node<T>* node){
+                                  ^
+../src/BST_IMP.cpp:25:1: error: prototype for ‘int Node<T>::mirror_fun(Node<T>*)’ does not match any in class ‘Node<T>’
+ Node<T>::mirror_fun(Node<T>* node){
+ ^~~~~~~
+In file included from ../src/BST_IMP.cpp:8:0:
+../src/BST_ADT.h:23:11: error: candidate is: Node<T>* Node<T>::mirror_fun(Node<T>*)
+  Node<T>* mirror_fun(Node* node);
+           ^~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
+make: *** [src/BST_IMP.o] Error 1
+12:24:21 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/BST_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
+../src/BST_IMP.cpp:25:34: error: ISO C++ forbids declaration of ‘mirror_fun’ with no type [-fpermissive]
+ Node<T>::mirror_fun(Node<T>* node){
+                                  ^
+../src/BST_IMP.cpp:25:1: error: prototype for ‘int Node<T>::mirror_fun(Node<T>*)’ does not match any in class ‘Node<T>’
+ Node<T>::mirror_fun(Node<T>* node){
+ ^~~~~~~
+In file included from ../src/BST_IMP.cpp:8:0:
+../src/BST_ADT.h:23:11: error: candidate is: Node<T>* Node<T>::mirror_fun(Node<T>*)
+  Node<T>* mirror_fun(Node<T>* node);
+           ^~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
+make: *** [src/BST_IMP.o] Error 1
+12:24:31 **** Incremental Build of configuration Release for project Assignment5 ****
+make all 
+Building file: ../src/BST_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
+Finished building: ../src/BST_IMP.cpp
+ 
+Building target: Assignment5
+Invoking: GCC C++ Linker
+g++  -o "Assignment5"  ./src/Assignment5.o ./src/BST_IMP.o   
+Finished building target: Assignment5
+ 
+12:45:00 **** Incremental Build of configuration Release for project Assignment3 ****
+make all 
+Building file: ../src/Assignment3.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.o" -o "src/Assignment3.o" "../src/Assignment3.cpp"
+../src/Assignment3.cpp: In function ‘int main()’:
+../src/Assignment3.cpp:38:36: error: cannot convert ‘node<int>*’ to ‘bin_tree<int>*’ in initialization
+    bin_tree<int>* cp = b.call_copy();
+                                    ^
+src/subdir.mk:21: recipe for target 'src/Assignment3.o' failed
+make: *** [src/Assignment3.o] Error 1

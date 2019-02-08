@@ -476,3 +476,100 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.cdt.core 1 0 2019-02-08 01:17:14.357
 !MESSAGE Indexed 'Assignment4' (1 sources, 0 headers) in 0.018 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75%)
+!SESSION 2019-02-08 11:20:44.286 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2019-02-08 11:21:30.916
+!MESSAGE The Eclipse Git-hosted URI 'http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/org.eclipse.setup' is blocked for direct access.
+Please open a Bugzilla to add it to an official Oomph catalog.
+For initial testing, use the file system local version of the resource.
+Alternatively, run the setup archiver application as follows:
+  /home/v4g4x/eclipse/cpp-oxygen/eclipse/eclipse -application org.eclipse.oomph.setup.core.SetupArchiver -consoleLog -noSplash -uris http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/org.eclipse.setup
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-08 11:26:23.346
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-08 11:26:23.348
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-08 11:26:23.348
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-08 11:26:32.270
+!MESSAGE Indexed 'Assignment 1' (3 sources, 176 headers) in 7.45 sec: 13,585 declarations; 21,445 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-08 11:26:46.095
+!MESSAGE Indexed 'Assignment1' (3 sources, 177 headers) in 7.69 sec: 13,617 declarations; 21,888 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.launch 4 150 2019-02-08 11:27:07.968
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Exec_tty error:Cannot run program "/media/v4g4x/43B2-8979/23119/Kabra/Assignment1/Debug/Assignment1": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:281)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:108)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2019-02-08 11:27:07.972
+!MESSAGE Exec_tty error:Cannot run program "/media/v4g4x/43B2-8979/23119/Kabra/Assignment1/Debug/Assignment1": Unknown reason
+!STACK 0
+java.io.IOException: Exec_tty error:Cannot run program "/media/v4g4x/43B2-8979/23119/Kabra/Assignment1/Debug/Assignment1": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:281)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:108)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.cdt.launch 4 150 2019-02-08 11:28:25.401
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Exec_tty error:Cannot run program "/media/v4g4x/43B2-8979/23119/Kabra/Assignment1/Release/Assignment1": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:281)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:108)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2019-02-08 11:28:25.401
+!MESSAGE Exec_tty error:Cannot run program "/media/v4g4x/43B2-8979/23119/Kabra/Assignment1/Release/Assignment1": Unknown reason
+!STACK 0
+java.io.IOException: Exec_tty error:Cannot run program "/media/v4g4x/43B2-8979/23119/Kabra/Assignment1/Release/Assignment1": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec_pty(Spawner.java:387)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:99)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:98)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.exec(LocalRunLaunchDelegate.java:281)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.runLocalApplication(LocalRunLaunchDelegate.java:108)
+	at org.eclipse.cdt.launch.internal.LocalRunLaunchDelegate.launch(LocalRunLaunchDelegate.java:76)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-08 11:31:01.805
+!MESSAGE Indexed 'Assignment1' (3 sources, 177 headers) in 4.69 sec: 13,617 declarations; 21,888 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-08 11:45:19.072
+!MESSAGE Indexed 'Assignment5' (1 sources, 174 headers) in 6.3 sec: 13,484 declarations; 21,246 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
