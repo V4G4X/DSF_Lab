@@ -6,6 +6,8 @@
  */
 #include <iostream>
 #include "BST_ADT.h"
+using namespace std;
+
 
 //Node Class Functions
 //Default Constructor
@@ -133,11 +135,18 @@ void BST<T>::display(){
 	//Inorder Traversal
 	if(!isEmpty()){
 		inorder(root);
+		PreOrder(root);
 	}
 }
 
 //Recursively Inorder Traversal
 template<class T>
 void BST<T>::inorder(Node<T>* node){
-	if()
+	if(node->lchild!=NULL)					//Lchild exists
+		inorder(node->lchild);
+	cout<<"Data: "<<node->data<<"\t";
+	if(node->rchild!=NULL)					//Rchild exists
+		inorder(node->rchild);
 }
+
+

@@ -15,6 +15,7 @@ private:
 	T data;
 	Node* next;
 public:
+	Node();
 	Node(T data);
 	friend SLL<T>;
 };

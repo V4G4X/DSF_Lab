@@ -9,23 +9,36 @@
 #include "LLADT.h"
 using namespace std;
 
+//Node Class Functions
+//Default Constructor
+template<class T>
+Node<T>::Node(){
+	this->data = data;
+	next = NULL;
+}
+
+//Parameterized Constructor
 template<class T>
 Node<T>::Node(T data){
 	this->data = data;
 	next = NULL;
 }
 
+//SLL Class Functions
+//Default Constructor
 template<class T>
 SLL<T>::SLL(){
 	head = NULL;
 	len=0;
 }
 
+//Returns Length of SLL
 template<class T>
 int SLL<T>::length(){
 	return len;
 }
 
+//Creates SLL of length 'i'
 template<class T>
 bool SLL<T>::create(int i){
 	if(len!=0){
@@ -51,6 +64,7 @@ bool SLL<T>::create(int i){
 	return 1;
 }
 
+//Returns 1 of Empty
 template<class T>
 bool SLL<T>::isEmpty(){
 	if(head==NULL)
@@ -59,6 +73,7 @@ bool SLL<T>::isEmpty(){
 		return 0;
 }
 
+//Prints SLL if T is a printable data-type, else terminates control
 template<class T>
 void SLL<T>::print(){
 	int i;
@@ -73,7 +88,7 @@ void SLL<T>::print(){
 	}
 }
 
-
+//Returns Data at 'i'th index
 template<class T>
 T SLL<T>::getdata(int i){
 	int j=0;
@@ -91,6 +106,7 @@ T SLL<T>::getdata(int i){
 	return tra->data;
 }
 
+//Inserts Data at 'i'th position
 template<class T>
 bool SLL<T>::insert(T data, int ch){
 	if(ch==0){
@@ -125,6 +141,7 @@ bool SLL<T>::insert(T data, int ch){
 		return 0;
 }
 
+//Deletes node from 'i'th position
 template<class T>
 bool SLL<T>::dlete(int ch){
 	if(ch==0){
@@ -158,6 +175,7 @@ bool SLL<T>::dlete(int ch){
 		return 0;
 }
 
+//Allocates space of Node and returns address
 template<class T>
 Node<T>* SLL<T>::getnode(T data){
 	Node<T> *link = new Node<T>(data);
