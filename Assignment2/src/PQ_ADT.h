@@ -17,6 +17,7 @@ private:
 public:
 	PQueue();
 	bool isEmpty();
+	T* getVector(int& i);
 	void add(T data);
 	void addM(T data);
 	void addH(T data);

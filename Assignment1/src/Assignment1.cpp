@@ -2,7 +2,6 @@
 // Name        : Assignment1.cpp
 // Description : Expression Conversion in C++, Using StackADT
 //============================================================================
-
 #include <iostream>
 #include "stack.h"
 #include "stack.cpp"
@@ -10,7 +9,6 @@
 using namespace std;
 
 class expression{
-
 	char infix[50],postfix[50],prefix[50];
 public:
 	void evaluate_pre();

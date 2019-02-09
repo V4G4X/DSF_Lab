@@ -1,181 +1,503 @@
-11:45:22 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-Building file: ../src/Assignment5.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment5.d" -MT"src/Assignment5.o" -o "src/Assignment5.o" "../src/Assignment5.cpp"
-Finished building: ../src/Assignment5.cpp
+11:32:39 **** Clean-only build of configuration Release for project Assignment1 ****
+make clean 
+rm -rf  ./src/Assignment1.o ./src/linked.o ./src/stack.o  ./src/Assignment1.d ./src/linked.d ./src/stack.d  Assignment1
  
-Building target: Assignment5
+11:32:39 **** Incremental Build of configuration Release for project Assignment1 ****
+make all 
+Building file: ../src/Assignment1.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment1.d" -MT"src/Assignment1.o" -o "src/Assignment1.o" "../src/Assignment1.cpp"
+../src/Assignment1.cpp:486:30: warning: "/*" within comment [-Wcomment]
+ Postfix expression is :AB+CDE/*+F+
+                               
+../src/Assignment1.cpp:504:30: warning: "/*" within comment [-Wcomment]
+ Postfix expression is :AB+CDE/*+F+
+                               
+../src/Assignment1.cpp:526:30: warning: "/*" within comment [-Wcomment]
+ Postfix expression is :AB+CDE/*+F+
+                               
+../src/Assignment1.cpp:624:24: warning: "/*" within comment [-Wcomment]
+ Prefix expression is :+/*+AB+CD-EFG
+                         
+../src/Assignment1.cpp: In function ‘int precedence(char)’:
+../src/Assignment1.cpp:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/Assignment1.cpp: In member function ‘int expression::isvalid()’:
+../src/Assignment1.cpp:334:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Assignment1.cpp
+ 
+Building file: ../src/linked.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/linked.d" -MT"src/linked.o" -o "src/linked.o" "../src/linked.cpp"
+Finished building: ../src/linked.cpp
+ 
+Building file: ../src/stack.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/stack.d" -MT"src/stack.o" -o "src/stack.o" "../src/stack.cpp"
+Finished building: ../src/stack.cpp
+ 
+Building target: Assignment1
 Invoking: GCC C++ Linker
-g++  -o "Assignment5"  ./src/Assignment5.o   
-Finished building target: Assignment5
+g++  -o "Assignment1"  ./src/Assignment1.o ./src/linked.o ./src/stack.o   
+Finished building target: Assignment1
  
-11:46:23 **** Incremental Build of configuration Release for project Assignment5 ****
+11:33:45 **** Incremental Build of configuration Release for project Assignment1 ****
 make all 
 make: Nothing to be done for 'all'.
-11:46:27 **** Incremental Build of configuration Release for project Assignment5 ****
+11:49:37 **** Incremental Build of configuration Release for project Assignment2 ****
 make all 
-make: Nothing to be done for 'all'.
-11:46:39 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-make: Nothing to be done for 'all'.
-11:46:59 **** Incremental Build of configuration Debug for project Assignment5 ****
-make all 
-make: Nothing to be done for 'all'.
-11:47:08 **** Incremental Build of configuration Debug for project Assignment5 ****
-make all 
-make: Nothing to be done for 'all'.
-11:47:16 **** Incremental Build of configuration Debug for project Assignment5 ****
-make all 
-make: Nothing to be done for 'all'.
-11:52:54 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-Building file: ../src/Assignment5.cpp
+Building file: ../src/Assignment2.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment5.d" -MT"src/Assignment5.o" -o "src/Assignment5.o" "../src/Assignment5.cpp"
-Finished building: ../src/Assignment5.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+In file included from ../src/Assignment2.cpp:25:0:
+../src/PQ_IMP.cpp:20:5: error: prototype for ‘int PQueue<T>::display(T*)’ does not match any in class ‘PQueue<T>’
+ int PQueue<T>::display(T* array){
+     ^~~~~~~~~
+In file included from ../src/Assignment2.cpp:24:0:
+../src/PQ_ADT.h:20:6: error: candidate is: int PQueue<T>::display()
+  int display();
+      ^~~~~~~
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:111:19: error: expected primary-expression before ‘=’ token
+     Patient* arr; = pq.display();
+                   ^
+../src/Assignment2.cpp:111:14: warning: unused variable ‘arr’ [-Wunused-variable]
+     Patient* arr; = pq.display();
+              ^~~
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+make: *** [src/Assignment2.o] Error 1
+11:49:47 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:111:19: error: expected primary-expression before ‘=’ token
+     Patient* arr; = pq.display();
+                   ^
+../src/Assignment2.cpp:111:32: error: no matching function for call to ‘PQueue<Patient>::display()’
+     Patient* arr; = pq.display();
+                                ^
+In file included from ../src/Assignment2.cpp:25:0:
+../src/PQ_IMP.cpp:20:5: note: candidate: int PQueue<T>::display(T*) [with T = Patient]
+ int PQueue<T>::display(T* array){
+     ^~~~~~~~~
+../src/PQ_IMP.cpp:20:5: note:   candidate expects 1 argument, 0 provided
+../src/Assignment2.cpp:111:14: warning: unused variable ‘arr’ [-Wunused-variable]
+     Patient* arr; = pq.display();
+              ^~~
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+make: *** [src/Assignment2.o] Error 1
+11:49:49 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:111:19: error: expected primary-expression before ‘=’ token
+     Patient* arr; = pq.display();
+                   ^
+../src/Assignment2.cpp:111:32: error: no matching function for call to ‘PQueue<Patient>::display()’
+     Patient* arr; = pq.display();
+                                ^
+In file included from ../src/Assignment2.cpp:25:0:
+../src/PQ_IMP.cpp:20:5: note: candidate: int PQueue<T>::display(T*) [with T = Patient]
+ int PQueue<T>::display(T* array){
+     ^~~~~~~~~
+../src/PQ_IMP.cpp:20:5: note:   candidate expects 1 argument, 0 provided
+../src/Assignment2.cpp:111:14: warning: unused variable ‘arr’ [-Wunused-variable]
+     Patient* arr; = pq.display();
+              ^~~
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+make: *** [src/Assignment2.o] Error 1
+11:55:13 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:114:11: error: ‘setw’ was not declared in this scope
+     cout<<setw()<<"Name\t\tAge\tAddress";
+           ^~~~
+../src/Assignment2.cpp:114:11: note: suggested alternative: ‘getw’
+     cout<<setw()<<"Name\t\tAge\tAddress";
+           ^~~~
+           getw
+../src/Assignment2.cpp:118:9: error: jump to case label [-fpermissive]
+    case 4:
+         ^
+../src/Assignment2.cpp:112:9: note:   crosses initialization of ‘int l’
+     int l = pq.display(arr);
+         ^
+../src/Assignment2.cpp:121:4: error: jump to case label [-fpermissive]
+    default:
+    ^~~~~~~
+../src/Assignment2.cpp:112:9: note:   crosses initialization of ‘int l’
+     int l = pq.display(arr);
+         ^
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+make: *** [src/Assignment2.o] Error 1
+11:55:28 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:114:11: error: ‘setw’ was not declared in this scope
+     cout<<setw()<<"Name\t\tAge\tAddress";
+           ^~~~
+../src/Assignment2.cpp:114:11: note: suggested alternative: ‘getw’
+     cout<<setw()<<"Name\t\tAge\tAddress";
+           ^~~~
+           getw
+make: *** [src/Assignment2.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+11:55:57 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:115:16: error: too few arguments to function ‘std::_Setw std::setw(int)’
+     cout<<setw()<<"Name\t\tAge\tAddress";
+                ^
+In file included from ../src/Assignment2.cpp:24:0:
+/usr/include/c++/7/iomanip:225:3: note: declared here
+   setw(int __n)
+   ^~~~
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+make: *** [src/Assignment2.o] Error 1
+12:01:18 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:113:27: warning: ‘arr’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     int l = pq.display(arr);
+                           ^
+Finished building: ../src/Assignment2.cpp
  
-Building target: Assignment5
+Building file: ../src/LL_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LL_IMP.d" -MT"src/LL_IMP.o" -o "src/LL_IMP.o" "../src/LL_IMP.cpp"
+Finished building: ../src/LL_IMP.cpp
+ 
+Building file: ../src/PQ_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PQ_IMP.d" -MT"src/PQ_IMP.o" -o "src/PQ_IMP.o" "../src/PQ_IMP.cpp"
+Finished building: ../src/PQ_IMP.cpp
+ 
+Building target: Assignment2
 Invoking: GCC C++ Linker
-g++  -o "Assignment5"  ./src/Assignment5.o   
-Finished building target: Assignment5
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
  
-11:53:12 **** Incremental Build of configuration Release for project Assignment5 ****
+12:01:39 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:04:54 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:133:65: error: expression cannot be used as a function
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDisease()()<<"Priority"<<endl;
+                                                                 ^
+../src/Assignment2.cpp:133:85: error: ‘char Patient::address [50]’ is private within this context
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDisease()()<<"Priority"<<endl;
+                                                                                     ^~~~~~~
+../src/Assignment2.cpp:32:17: note: declared private here
+  char address[50];
+                 ^
+../src/Assignment2.cpp:133:93: error: expression cannot be used as a function
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDisease()()<<"Priority"<<endl;
+                                                                                             ^
+../src/Assignment2.cpp:133:126: error: expression cannot be used as a function
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDisease()()<<"Priority"<<endl;
+                                                                                                                              ^
+make: *** [src/Assignment2.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+12:05:38 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:07:17 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:137:65: error: expression cannot be used as a function
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDiseaselist(arr[i].getDisease())<<arr[i].getPriority()<<endl;
+                                                                 ^
+../src/Assignment2.cpp:137:85: error: ‘char Patient::address [50]’ is private within this context
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDiseaselist(arr[i].getDisease())<<arr[i].getPriority()<<endl;
+                                                                                     ^~~~~~~
+../src/Assignment2.cpp:32:17: note: declared private here
+  char address[50];
+                 ^
+../src/Assignment2.cpp:137:93: error: expression cannot be used as a function
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDiseaselist(arr[i].getDisease())<<arr[i].getPriority()<<endl;
+                                                                                             ^
+make: *** [src/Assignment2.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+12:07:53 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In function ‘int main()’:
+../src/Assignment2.cpp:137:65: error: expression cannot be used as a function
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDiseaselist(arr[i].getDisease())<<arr[i].getPriority()<<endl;
+                                                                 ^
+../src/Assignment2.cpp:137:85: error: ‘char Patient::address [50]’ is private within this context
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDiseaselist(arr[i].getDisease())<<arr[i].getPriority()<<endl;
+                                                                                     ^~~~~~~
+../src/Assignment2.cpp:32:17: note: declared private here
+  char address[50];
+                 ^
+../src/Assignment2.cpp:137:93: error: expression cannot be used as a function
+      cout<<setw(15)<<arr[i].getName()<<setw(4)<<arr[i].getAge()()<<setw(20)<<arr[i].address()<<setw(15)<<arr[i].getDiseaselist(arr[i].getDisease())<<arr[i].getPriority()<<endl;
+                                                                                             ^
+make: *** [src/Assignment2.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+12:08:11 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:08:34 **** Incremental Build of configuration Release for project Assignment2 ****
 make all 
 make: Nothing to be done for 'all'.
-12:09:32 **** Incremental Build of configuration Release for project Assignment5 ****
+12:10:17 **** Incremental Build of configuration Release for project Assignment2 ****
 make all 
-Building file: ../src/BST_IMP.cpp
+Building file: ../src/Assignment2.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
-In file included from ../src/BST_IMP.cpp:8:0:
-../src/BST_ADT.h:20:15: error: template argument required for ‘class BST’
-  friend class BST;
-               ^~~
-../src/BST_ADT.h:20:2: error: friend declaration does not name a class or function
-  friend class BST;
-  ^~~~~~
-../src/BST_IMP.cpp: In constructor ‘Node<T>::Node()’:
-../src/BST_IMP.cpp:12:2: error: ‘lchi’ was not declared in this scope
-  lchi
-  ^~~~
-../src/BST_IMP.cpp:12:2: note: suggested alternative: ‘lchild’
-  lchi
-  ^~~~
-  lchild
-make: *** [src/BST_IMP.o] Error 1
-src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
-12:09:59 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-Building file: ../src/BST_IMP.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
-In file included from ../src/BST_IMP.cpp:8:0:
-../src/BST_ADT.h:20:15: error: template argument required for ‘class BST’
-  friend class BST;
-               ^~~
-../src/BST_ADT.h:20:2: error: friend declaration does not name a class or function
-  friend class BST;
-  ^~~~~~
-src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
-make: *** [src/BST_IMP.o] Error 1
-12:10:59 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-Building file: ../src/BST_IMP.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
-In file included from ../src/BST_IMP.cpp:8:0:
-../src/BST_ADT.h:20:15: error: template argument required for ‘class BST’
-  friend class BST;
-               ^~~
-../src/BST_ADT.h:20:2: error: friend declaration does not name a class or function
-  friend class BST;
-  ^~~~~~
-src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
-make: *** [src/BST_IMP.o] Error 1
-12:11:08 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-Building file: ../src/BST_IMP.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
-Finished building: ../src/BST_IMP.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
  
-Building target: Assignment5
+Building target: Assignment2
 Invoking: GCC C++ Linker
-g++  -o "Assignment5"  ./src/Assignment5.o ./src/BST_IMP.o   
-Finished building target: Assignment5
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
  
-12:19:03 **** Incremental Build of configuration Release for project Assignment5 ****
+12:10:39 **** Incremental Build of configuration Debug for project Assignment2 ****
 make all 
-Building file: ../src/BST_IMP.cpp
+Building file: ../src/Assignment2.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
-../src/BST_IMP.cpp:25:34: error: ISO C++ forbids declaration of ‘mirror_fun’ with no type [-fpermissive]
- Node<T>::mirror_fun(Node<T>* node){
-                                  ^
-../src/BST_IMP.cpp:25:1: error: prototype for ‘int Node<T>::mirror_fun(Node<T>*)’ does not match any in class ‘Node<T>’
- Node<T>::mirror_fun(Node<T>* node){
- ^~~~~~~
-In file included from ../src/BST_IMP.cpp:8:0:
-../src/BST_ADT.h:23:11: error: candidate is: Node<T>* Node<T>::mirror_fun(Node<T>*)
-  Node<T>* mirror_fun(Node* node);
-           ^~~~~~~~~~
-src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
-make: *** [src/BST_IMP.o] Error 1
-12:24:03 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-Building file: ../src/BST_IMP.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
-../src/BST_IMP.cpp:25:34: error: ISO C++ forbids declaration of ‘mirror_fun’ with no type [-fpermissive]
- Node<T>::mirror_fun(Node<T>* node){
-                                  ^
-../src/BST_IMP.cpp:25:1: error: prototype for ‘int Node<T>::mirror_fun(Node<T>*)’ does not match any in class ‘Node<T>’
- Node<T>::mirror_fun(Node<T>* node){
- ^~~~~~~
-In file included from ../src/BST_IMP.cpp:8:0:
-../src/BST_ADT.h:23:11: error: candidate is: Node<T>* Node<T>::mirror_fun(Node<T>*)
-  Node<T>* mirror_fun(Node* node);
-           ^~~~~~~~~~
-src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
-make: *** [src/BST_IMP.o] Error 1
-12:24:21 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-Building file: ../src/BST_IMP.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
-../src/BST_IMP.cpp:25:34: error: ISO C++ forbids declaration of ‘mirror_fun’ with no type [-fpermissive]
- Node<T>::mirror_fun(Node<T>* node){
-                                  ^
-../src/BST_IMP.cpp:25:1: error: prototype for ‘int Node<T>::mirror_fun(Node<T>*)’ does not match any in class ‘Node<T>’
- Node<T>::mirror_fun(Node<T>* node){
- ^~~~~~~
-In file included from ../src/BST_IMP.cpp:8:0:
-../src/BST_ADT.h:23:11: error: candidate is: Node<T>* Node<T>::mirror_fun(Node<T>*)
-  Node<T>* mirror_fun(Node<T>* node);
-           ^~~~~~~~~~
-src/subdir.mk:21: recipe for target 'src/BST_IMP.o' failed
-make: *** [src/BST_IMP.o] Error 1
-12:24:31 **** Incremental Build of configuration Release for project Assignment5 ****
-make all 
-Building file: ../src/BST_IMP.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BST_IMP.d" -MT"src/BST_IMP.o" -o "src/BST_IMP.o" "../src/BST_IMP.cpp"
-Finished building: ../src/BST_IMP.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
  
-Building target: Assignment5
+Building file: ../src/PQ_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PQ_IMP.d" -MT"src/PQ_IMP.o" -o "src/PQ_IMP.o" "../src/PQ_IMP.cpp"
+Finished building: ../src/PQ_IMP.cpp
+ 
+Building target: Assignment2
 Invoking: GCC C++ Linker
-g++  -o "Assignment5"  ./src/Assignment5.o ./src/BST_IMP.o   
-Finished building target: Assignment5
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
  
-12:45:00 **** Incremental Build of configuration Release for project Assignment3 ****
+12:10:48 **** Incremental Build of configuration Debug for project Assignment2 ****
 make all 
-Building file: ../src/Assignment3.cpp
+make: Nothing to be done for 'all'.
+12:13:18 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment3.d" -MT"src/Assignment3.o" -o "src/Assignment3.o" "../src/Assignment3.cpp"
-../src/Assignment3.cpp: In function ‘int main()’:
-../src/Assignment3.cpp:38:36: error: cannot convert ‘node<int>*’ to ‘bin_tree<int>*’ in initialization
-    bin_tree<int>* cp = b.call_copy();
-                                    ^
-src/subdir.mk:21: recipe for target 'src/Assignment3.o' failed
-make: *** [src/Assignment3.o] Error 1
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:23:20 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building file: ../src/PQ_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PQ_IMP.d" -MT"src/PQ_IMP.o" -o "src/PQ_IMP.o" "../src/PQ_IMP.cpp"
+Finished building: ../src/PQ_IMP.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:23:39 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:24:15 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:25:51 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:26:02 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:27:08 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:31:00 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building file: ../src/PQ_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PQ_IMP.d" -MT"src/PQ_IMP.o" -o "src/PQ_IMP.o" "../src/PQ_IMP.cpp"
+Finished building: ../src/PQ_IMP.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:31:09 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:33:31 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:34:41 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:34:58 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:43:45 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building file: ../src/PQ_IMP.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PQ_IMP.d" -MT"src/PQ_IMP.o" -o "src/PQ_IMP.o" "../src/PQ_IMP.cpp"
+Finished building: ../src/PQ_IMP.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:43:57 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:45:24 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:47:04 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+12:47:08 **** Incremental Build of configuration Debug for project Assignment2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:53:52 **** Incremental Build of configuration Release for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:55:43 **** Incremental Build of configuration Release for project Assignment1 ****
+make all 
+make: Nothing to be done for 'all'.

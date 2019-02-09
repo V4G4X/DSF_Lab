@@ -21,6 +21,7 @@ Low Priority
  */
 
 #include <iostream>
+#include <iomanip>
 #include "PQ_ADT.h"
 #include "PQ_IMP.cpp"
 using namespace std;
@@ -45,17 +46,21 @@ public:
 		do{
 			cout<<"Enter Patient Disease: ";
 			cin>>disease;
-			if(disease>0 && disease<=5)
+			if(disease>0 && disease<=5){
 				priority = 'h';
-			else if(disease>5 && disease<=7)
-				priority = 'm';
-			else if(disease>8 && disease<=10)
-				priority = 'l';
-			else{
-				cout<<"Incorrect Choice\n";
-				continue;
+				break;
 			}
-		}while(0);
+			else if(disease>5 && disease<=7){
+				priority = 'm';
+				break;
+			}
+			else if(disease>7 && disease<=10){
+				break;
+				priority = 'l';
+			}
+			else
+				cout<<"Incorrect Choice\n";
+		}while(1);
 		cin.ignore();
 	}
 
@@ -67,9 +72,18 @@ public:
 		cout<<"Patient Disease: "<<diseaselist[disease-1]<<endl;
 	}
 
-	char getPriority(){
-		return priority;
-	}
+	//Getters for Required Data Members
+	const char* getAddress() const { return address;	}
+
+	int getAge() const {return age;	}
+
+	int getDisease() const { return disease; }
+
+	const char* getDiseaselist(int i) const { return diseaselist[i]; }
+
+	const char* getName() const { return name; }
+
+	char getPriority() const { return priority;	}
 };
 
 int main() {
@@ -78,7 +92,7 @@ int main() {
 	cout<<"Welcome to the Hospital"<<endl;
 	int ch;
 	do{
-		cout<<"Enter a choice\n1.Add Customer\n2.Serve Customer\n3.Exit"<<endl;
+		cout<<"Enter a choice\n1.Add Customer\n2.Serve Customer\n3.Display Queue\n4.Exit"<<endl;
 		cin>>ch;
 		cin.ignore();
 		switch(ch){
@@ -107,13 +121,153 @@ int main() {
 				else
 					cout<<"The Queue is Empty"<<endl;
 				break;
-			case 3:
+			case 3:{
+				int l;
+				Patient* arr=pq.getVector(l);
+				int i;
+				cout<<"Name"<<setw(15)<<"Age"<<setw(4)<<"Address"<<setw(20)<<"Disease"<<setw(15)<<endl;
+				for(i=0 ; i<l ; i++)
+					cout<<arr[i].getName()<<setw(15)<<arr[i].getAge()<<setw(4)<<arr[i].getAddress()<<setw(20)<<arr[i].getDiseaselist(arr[i].getDisease())<<setw(15)<<endl;
+				break;
+			}
+			case 4:
 				cout<<"Exiting Hospital Program"<<endl;
 				break;
 			default:
 				cout<<"Enter proper choices"<<endl;
 				break;
 		}
-	}while(ch!=3);
+	}while(ch!=4);
 	return 0;
 }
+////////////////////END///////////////////
+/*
+Welcome to the Hospital
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+1
+Enter Patient Name: Varun
+Enter Patient Age: 19
+Enter Patient Address: KandaWalah
+
+High Priority:
+1. Accident
+2. Hemorrhage(Internal Bleeding)
+3. Heart Disease
+4. Quarantine Scenario
+5. LoveSick
+Medium Priority:
+6. Cancer
+7. Diabetes
+Low Priority
+8. Cold
+9. Viral
+10.First CheckUp
+Enter Patient Disease: 9
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+1
+Enter Patient Name: Jash
+Enter Patient Age: 20
+Enter Patient Address: Handi
+
+High Priority:
+1. Accident
+2. Hemorrhage(Internal Bleeding)
+3. Heart Disease
+4. Quarantine Scenario
+5. LoveSick
+Medium Priority:
+6. Cancer
+7. Diabetes
+Low Priority
+8. Cold
+9. Viral
+10.First CheckUp
+Enter Patient Disease: 7
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+1
+Enter Patient Name: Sam
+Enter Patient Age: 20
+Enter Patient Address: Mananana
+
+High Priority:
+1. Accident
+2. Hemorrhage(Internal Bleeding)
+3. Heart Disease
+4. Quarantine Scenario
+5. LoveSick
+Medium Priority:
+6. Cancer
+7. Diabetes
+Low Priority
+8. Cold
+9. Viral
+10.First CheckUp
+Enter Patient Disease: 3
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+3
+Name            Age		Address             Disease
+Sam         	20		Mananana			4. Quarantine Scenario
+Jash            20		Handi             	8. Cold
+Varun           19		KandaWalah    		10.First CheckUp
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+2
+Patient Name: Sam
+Patient Age: 20
+Patient Address: Mananana
+Patient Disease: 3. Heart Disease
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+2
+Patient Name: Jash
+Patient Age: 20
+Patient Address: Handi
+Patient Disease: 7. Diabetes
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+2
+Patient Name: Varun
+Patient Age: 19
+Patient Address: KandaWalah
+Patient Disease: 9. Viral
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+2
+The Queue is Empty
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+4
+Exiting Hospital Program
+
+ * */
