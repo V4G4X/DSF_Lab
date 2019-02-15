@@ -48,3 +48,773 @@ Finished building target: Assignment6
 12:24:50 **** Incremental Build of configuration Debug for project Assignment6 ****
 make all 
 make: Nothing to be done for 'all'.
+12:02:05 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:13:7: error: storage size of ‘name’ isn’t known
+  char name[];
+       ^~~~
+src/subdir.mk:24: recipe for target 'src/Assignment6.o' failed
+make: *** [src/Assignment6.o] Error 1
+12:02:15 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:13:7: error: storage size of ‘name’ isn’t known
+  char name[];
+       ^~~~
+make: *** [src/Assignment6.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Assignment6.o' failed
+12:02:20 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:02:38 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:15:20: error: too few arguments to function ‘time_t time(time_t*)’
+  time_t now = time();
+                    ^
+In file included from /usr/include/pthread.h:24:0,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h:35,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h:148,
+                 from /usr/include/c++/7/ext/atomicity.h:35,
+                 from /usr/include/c++/7/bits/ios_base.h:39,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/Assignment6.cpp:7:
+/usr/include/time.h:75:15: note: declared here
+ extern time_t time (time_t *__timer) __THROW;
+               ^~~~
+../src/Assignment6.cpp:15:9: warning: unused variable ‘now’ [-Wunused-variable]
+  time_t now = time();
+         ^~~
+make: *** [src/Assignment6.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Assignment6.o' failed
+12:03:01 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:15:9: warning: unused variable ‘now’ [-Wunused-variable]
+  time_t now = time(0);
+         ^~~
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:03:32 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:16:8: warning: unused variable ‘st_name’ [-Wunused-variable]
+  char *st_name = ctime(&now);
+        ^~~~~~~
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:03:49 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:03:54 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:04:50 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:18:2: error: ‘strcat’ was not declared in this scope
+  strcat(st_name,name);
+  ^~~~~~
+../src/Assignment6.cpp:18:2: note: suggested alternative: ‘struct’
+  strcat(st_name,name);
+  ^~~~~~
+  struct
+src/subdir.mk:24: recipe for target 'src/Assignment6.o' failed
+make: *** [src/Assignment6.o] Error 1
+12:04:52 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+../src/Assignment6.cpp: In function ‘int main()’:
+../src/Assignment6.cpp:18:2: error: ‘strcat’ was not declared in this scope
+  strcat(st_name,name);
+  ^~~~~~
+../src/Assignment6.cpp:18:2: note: suggested alternative: ‘struct’
+  strcat(st_name,name);
+  ^~~~~~
+  struct
+src/subdir.mk:24: recipe for target 'src/Assignment6.o' failed
+make: *** [src/Assignment6.o] Error 1
+12:05:04 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:05:07 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:05:27 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:05:29 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:05:39 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o   
+Finished building target: Assignment6
+ 
+12:12:16 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp:16:6: error: prototype for ‘bool FB::create_ulist()’ does not match any in class ‘FB’
+ bool FB::create_ulist(){
+      ^~
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:49:7: error: candidate is: bool FB::create_ulist(int)
+  bool create_ulist(int n);
+       ^~~~~~~~~~~~
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:12:25 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp:16:6: error: prototype for ‘bool FB::create_ulist()’ does not match any in class ‘FB’
+ bool FB::create_ulist(){
+      ^~
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:49:7: error: candidate is: bool FB::create_ulist(int)
+  bool create_ulist(int n);
+       ^~~~~~~~~~~~
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:12:29 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp:16:6: error: prototype for ‘bool FB::create_ulist()’ does not match any in class ‘FB’
+ bool FB::create_ulist(){
+      ^~
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:49:7: error: candidate is: bool FB::create_ulist(int)
+  bool create_ulist(int n);
+       ^~~~~~~~~~~~
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:12:47 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 
+12:18:37 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In constructor ‘User::User(Date, char*)’:
+../src/graph_imp.cpp:26:15: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  this->name = name;
+               ^~~~
+../src/graph_imp.cpp:27:19: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  uid = generateID();
+                   ^
+../src/graph_imp.cpp: At global scope:
+../src/graph_imp.cpp:30:18: error: ISO C++ forbids declaration of ‘generateID’ with no type [-fpermissive]
+ User::generateID(){
+                  ^
+../src/graph_imp.cpp:30:1: error: prototype for ‘int User::generateID()’ does not match any in class ‘User’
+ User::generateID(){
+ ^~~~
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:36:8: error: candidate is: char* User::generateID()
+  char* generateID();
+        ^~~~~~~~~~
+make: *** [src/graph_imp.o] Error 1
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+12:19:16 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:36:6: error: expected unqualified-id before ‘[’ token
+  char[] generateID();
+      ^
+../src/graph_imp.cpp: In constructor ‘User::User(Date, char*)’:
+../src/graph_imp.cpp:26:15: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  this->name = name;
+               ^~~~
+../src/graph_imp.cpp:27:8: error: ‘generateID’ was not declared in this scope
+  uid = generateID();
+        ^~~~~~~~~~
+../src/graph_imp.cpp:27:8: note: suggested alternative: ‘getdate_r’
+  uid = generateID();
+        ^~~~~~~~~~
+        getdate_r
+../src/graph_imp.cpp: At global scope:
+../src/graph_imp.cpp:30:18: error: ISO C++ forbids declaration of ‘generateID’ with no type [-fpermissive]
+ User::generateID(){
+                  ^
+../src/graph_imp.cpp:30:18: error: no ‘int User::generateID()’ member function declared in class ‘User’
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:19:41 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In constructor ‘User::User(Date, char*)’:
+../src/graph_imp.cpp:26:15: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  this->name = name;
+               ^~~~
+../src/graph_imp.cpp:27:19: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  uid = generateID();
+                   ^
+../src/graph_imp.cpp: In member function ‘char* User::generateID()’:
+../src/graph_imp.cpp:33:19: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+   uid = ctime(&now);
+                   ^
+../src/graph_imp.cpp:34:3: error: ‘strcat’ was not declared in this scope
+   strcat(uid,name);
+   ^~~~~~
+../src/graph_imp.cpp:34:3: note: suggested alternative: ‘struct’
+   strcat(uid,name);
+   ^~~~~~
+   struct
+../src/graph_imp.cpp:36:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/graph_imp.o] Error 1
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+12:20:08 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In constructor ‘User::User(Date, char*)’:
+../src/graph_imp.cpp:26:15: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  this->name = name;
+               ^~~~
+../src/graph_imp.cpp: In member function ‘char* User::generateID()’:
+../src/graph_imp.cpp:34:3: error: ‘strcat’ was not declared in this scope
+   strcat(uid,name);
+   ^~~~~~
+../src/graph_imp.cpp:34:3: note: suggested alternative: ‘struct’
+   strcat(uid,name);
+   ^~~~~~
+   struct
+../src/graph_imp.cpp:36:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:20:34 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In constructor ‘User::User(Date, char*)’:
+../src/graph_imp.cpp:26:15: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  this->name = name;
+               ^~~~
+../src/graph_imp.cpp: In member function ‘char* User::generateID()’:
+../src/graph_imp.cpp:34:3: error: ‘strcat’ was not declared in this scope
+   strcat(uid,name);
+   ^~~~~~
+../src/graph_imp.cpp:34:3: note: suggested alternative: ‘struct’
+   strcat(uid,name);
+   ^~~~~~
+   struct
+../src/graph_imp.cpp:36:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/graph_imp.o] Error 1
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+12:20:46 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In constructor ‘User::User(Date, char*)’:
+../src/graph_imp.cpp:26:15: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  this->name = name;
+               ^~~~
+../src/graph_imp.cpp: In member function ‘char* User::generateID()’:
+../src/graph_imp.cpp:36:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:21:05 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In constructor ‘User::User(Date, char*)’:
+../src/graph_imp.cpp:26:15: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  this->name = name;
+               ^~~~
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:21:17 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In constructor ‘User::User(Date, char*)’:
+../src/graph_imp.cpp:26:15: error: incompatible types in assignment of ‘char*’ to ‘char [50]’
+  this->name = name;
+               ^~~~
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:21:41 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 
+12:23:12 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:21:8: warning: unused variable ‘name’ [-Wunused-variable]
+   char name[MAX];
+        ^~~~
+../src/graph_imp.cpp:22:8: warning: unused variable ‘dob’ [-Wunused-variable]
+   Date dob;
+        ^~~
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 
+12:26:47 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:24:14: error: expression cannot be used as a function
+   dob.accept();
+              ^
+make: *** [src/graph_imp.o] Error 1
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+12:27:00 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:24:14: error: expression cannot be used as a function
+   dob.accept();
+              ^
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:27:24 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:24:14: error: expression cannot be used as a function
+   dob.accept();
+              ^
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:27:33 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+./src/graph_imp.o: In function `Node<User>::Node(User)':
+/home/v4g4x/DSF_Lab/Assignment6/Debug/../src/LL_IMP.cpp:12: undefined reference to `User::User()'
+collect2: error: ld returned 1 exit status
+make: *** [Assignment6] Error 1
+makefile:45: recipe for target 'Assignment6' failed
+12:28:45 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+In file included from /usr/include/strings.h:23:0,
+                 from /usr/include/string.h:431,
+                 from ../src/graph_imp.cpp:10:
+../src/graph_imp.cpp: In constructor ‘User::User()’:
+../src/graph_imp.cpp:32:6: error: no match for ‘operator=’ (operand types are ‘Date’ and ‘long int’)
+  dob=NULL;
+      ^
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:15:16: note: candidate: constexpr Date& Date::operator=(const Date&)
+ typedef struct Date{
+                ^~~~
+../src/graph.h:15:16: note:   no known conversion for argument 1 from ‘long int’ to ‘const Date&’
+../src/graph.h:15:16: note: candidate: constexpr Date& Date::operator=(Date&&)
+../src/graph.h:15:16: note:   no known conversion for argument 1 from ‘long int’ to ‘Date&&’
+make: *** [src/graph_imp.o] Error 1
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+12:28:50 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+In file included from /usr/include/strings.h:23:0,
+                 from /usr/include/string.h:431,
+                 from ../src/graph_imp.cpp:10:
+../src/graph_imp.cpp: In constructor ‘User::User()’:
+../src/graph_imp.cpp:32:6: error: no match for ‘operator=’ (operand types are ‘Date’ and ‘long int’)
+  dob=NULL;
+      ^
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:15:16: note: candidate: constexpr Date& Date::operator=(const Date&)
+ typedef struct Date{
+                ^~~~
+../src/graph.h:15:16: note:   no known conversion for argument 1 from ‘long int’ to ‘const Date&’
+../src/graph.h:15:16: note: candidate: constexpr Date& Date::operator=(Date&&)
+../src/graph.h:15:16: note:   no known conversion for argument 1 from ‘long int’ to ‘Date&&’
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:29:09 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+In file included from ../src/graph_imp.cpp:13:0:
+../src/LL_IMP.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/LL_IMP.cpp:104:7: warning: assuming signed overflow does not occur when assuming that (X + c) < X is always false [-Wstrict-overflow]
+  else if(ch<len && ch>0){
+       ^~
+../src/LL_IMP.cpp:13:2: warning: ‘dob.Date::dd’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  this->data = data;
+  ^~~~
+../src/graph_imp.cpp:22:8: note: ‘dob.Date::dd’ was declared here
+   Date dob;
+        ^~~
+In file included from ../src/graph_imp.cpp:13:0:
+../src/LL_IMP.cpp:13:2: warning: ‘dob.Date::mm’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  this->data = data;
+  ^~~~
+../src/graph_imp.cpp:22:8: note: ‘dob.Date::mm’ was declared here
+   Date dob;
+        ^~~
+In file included from ../src/graph_imp.cpp:13:0:
+../src/LL_IMP.cpp:13:2: warning: ‘dob.Date::yy’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  this->data = data;
+  ^~~~
+../src/graph_imp.cpp:22:8: note: ‘dob.Date::yy’ was declared here
+   Date dob;
+        ^~~
+In file included from ../src/graph_imp.cpp:13:0:
+../src/LL_IMP.cpp:13:2: warning: ‘*((void*)& dob +12)’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  this->data = data;
+  ^~~~
+../src/graph_imp.cpp:22:8: note: ‘*((void*)& dob +12)’ was declared here
+   Date dob;
+        ^~~
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 
+12:30:11 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:24:14: error: expression cannot be used as a function
+   dob.accept();
+              ^
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:30:27 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:24:14: error: expression cannot be used as a function
+   dob.accept();
+              ^
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:30:31 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:24:14: error: expression cannot be used as a function
+   dob.accept();
+              ^
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:30:41 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+./src/graph_imp.o: In function `FB::create_ulist(int)':
+/home/v4g4x/DSF_Lab/Assignment6/Debug/../src/graph_imp.cpp:24: undefined reference to `Date::accept()'
+collect2: error: ld returned 1 exit status
+make: *** [Assignment6] Error 1
+makefile:45: recipe for target 'Assignment6' failed
+12:31:08 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+./src/graph_imp.o: In function `FB::create_ulist(int)':
+/home/v4g4x/DSF_Lab/Assignment6/Debug/../src/graph_imp.cpp:24: undefined reference to `Date::accept()'
+collect2: error: ld returned 1 exit status
+make: *** [Assignment6] Error 1
+makefile:45: recipe for target 'Assignment6' failed
+12:32:38 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp:18:6: error: prototype for ‘bool Date::accept(int, int, int)’ does not match any in class ‘Date’
+ bool Date::accept(int dd,int mm,int yy){
+      ^~~~
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:17:7: error: candidate is: bool Date::accept()
+  bool accept();
+       ^~~~~~
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:33:10 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:31:14: error: no matching function for call to ‘Date::accept()’
+   dob.accept();
+              ^
+../src/graph_imp.cpp:18:6: note: candidate: bool Date::accept(int, int, int)
+ bool Date::accept(int dd,int mm,int yy){
+      ^~~~
+../src/graph_imp.cpp:18:6: note:   candidate expects 3 arguments, 0 provided
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:33:14 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:31:14: error: no matching function for call to ‘Date::accept()’
+   dob.accept();
+              ^
+../src/graph_imp.cpp:18:6: note: candidate: bool Date::accept(int, int, int)
+ bool Date::accept(int dd,int mm,int yy){
+      ^~~~
+../src/graph_imp.cpp:18:6: note:   candidate expects 3 arguments, 0 provided
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:34:39 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 
+12:37:55 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+In file included from ../src/graph_imp.cpp:11:0:
+../src/graph.h:46:11: error: template argument 1 is invalid
+  SLL<*User> userlist;
+           ^
+../src/graph_imp.cpp: In member function ‘bool FB::create_ulist(int)’:
+../src/graph_imp.cpp:42:14: error: request for member ‘insert’ in ‘((FB*)this)->FB::userlist’, which is of non-class type ‘int’
+     userlist.insert(u,userlist.length()+1);
+              ^~~~~~
+../src/graph_imp.cpp:42:32: error: request for member ‘length’ in ‘((FB*)this)->FB::userlist’, which is of non-class type ‘int’
+     userlist.insert(u,userlist.length()+1);
+                                ^~~~~~
+src/subdir.mk:27: recipe for target 'src/graph_imp.o' failed
+make: *** [src/graph_imp.o] Error 1
+12:38:07 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 
+12:38:12 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+make: Nothing to be done for 'all'.
+12:44:39 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/LL_IMP.o ./src/STACKLL_IMP.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 

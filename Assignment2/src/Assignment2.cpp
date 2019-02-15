@@ -127,7 +127,7 @@ int main() {
 				int i;
 				cout<<"Name"<<setw(15)<<"Age"<<setw(4)<<"Address"<<setw(20)<<"Disease"<<setw(15)<<endl;
 				for(i=0 ; i<l ; i++)
-					cout<<arr[i].getName()<<setw(15)<<arr[i].getAge()<<setw(4)<<arr[i].getAddress()<<setw(20)<<arr[i].getDiseaselist(arr[i].getDisease())<<setw(15)<<endl;
+					cout<<arr[i].getName()<<setw(15)<<arr[i].getAge()<<setw(4)<<arr[i].getAddress()<<setw(20)<<arr[i].getDiseaselist(arr[i].getDisease()-1)<<setw(15)<<endl;
 				break;
 			}
 			case 4:
