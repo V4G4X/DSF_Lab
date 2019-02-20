@@ -16,7 +16,6 @@
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 			<item value="org.eclipse.ui.preferences"/>
-			<item value=""/>
 		</list>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
