@@ -22,6 +22,8 @@ Low Priority
 
 #include <iostream>
 #include <iomanip>
+#include <ctime>
+#include <string.h>
 #include "PQ_ADT.h"
 #include "PQ_IMP.cpp"
 using namespace std;
@@ -37,6 +39,9 @@ public:
 	void accept(){
 		cout<<"Enter Patient Name: ";
 		cin.getline(name,50);
+		time_t now = time(0);
+		char* uid = ctime(&now);
+		strcat(name,uid);
 		cout<<"Enter Patient Age: ";
 		cin>>age;
 		cin.ignore();

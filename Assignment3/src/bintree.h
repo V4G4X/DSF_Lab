@@ -18,6 +18,7 @@ template<class T>
 class bin_tree {
 	node<T>*root;
 	node<T>*temp;
+	bin_tree<T>* temp2;
 public:
 	bin_tree();
 	void initialise();
@@ -27,7 +28,7 @@ public:
 	node<T>* insert_rec(T x,node<T>*root);
 	void display();
 	node<T>* copy(node<T>* temp);
-	node<T>* call_copy();
+	bin_tree<T>* call_copy();
 	void disp_inorder(node<T>* temp);
 	void disp_preorder(node<T>* temp);
 	void disp_postorder(node<T>* temp);

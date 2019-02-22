@@ -1,6 +1,18 @@
-19:50:02 **** Incremental Build of configuration Release for project Assignment2 ****
+08:57:48 **** Incremental Build of configuration Release for project A3 ****
 make all 
 make: Nothing to be done for 'all'.
-19:50:03 **** Incremental Build of configuration Debug for project Assignment2 ****
+08:57:58 **** Incremental Build of configuration Release for project A3 ****
 make all 
 make: Nothing to be done for 'all'.
+09:01:39 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 

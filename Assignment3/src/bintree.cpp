@@ -70,10 +70,10 @@ void bin_tree<T>::initialise(){
 	temp=root;
 }
 template<class T>
-node<T>* bin_tree<T>::call_copy(){
+bin_tree<T>* bin_tree<T>::call_copy(){
 	initialise();
-	temp=copy(temp);
-	return temp;
+	temp2->root=copy(root);
+	return temp2;
 }
 template<class T>
 node<T>* bin_tree<T>::copy(node<T>* temp){
