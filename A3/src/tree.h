@@ -2,7 +2,7 @@
  * tree.h
  *
  *  Created on: 29-Jan-2019
- *      Author: f9
+ *      Author: e9
  */
 #ifndef TREE_H
 #define TREE_H
@@ -20,7 +20,7 @@ class tree   					//tree class
 		~tree(); 			     //destructor
 	node* maketree(); 			 //make tree function to create a tree
     void insert();    			 //insert function to insert elements in a tree
-    void preorder(node*);    //preorder traversal function
+    void preorder(node*);   	 //preorder traversal function
     int depth(node*);            //function for depth
     int count(node*);		     // count of terminal nodes function
     node* copy(node*);           // copy of a tree
