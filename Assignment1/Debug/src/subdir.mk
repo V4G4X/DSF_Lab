@@ -4,19 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Assignment1.cpp \
+../src/conver.cpp \
 ../src/linked.cpp \
-../src/stack.cpp 
+../src/stackadt.cpp 
 
 OBJS += \
-./src/Assignment1.o \
+./src/conver.o \
 ./src/linked.o \
-./src/stack.o 
+./src/stackadt.o 
 
 CPP_DEPS += \
-./src/Assignment1.d \
+./src/conver.d \
 ./src/linked.d \
-./src/stack.d 
+./src/stackadt.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

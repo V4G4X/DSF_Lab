@@ -1,30 +1,33 @@
 /*
  * linked.h
+ *
+ *  Created on: Jan 10, 2019
  */
 
 #ifndef LINKED_H_
 #define LINKED_H_
 
-template<class T>
-struct node
-{
-	T data;
-	 node <T>*next;
-};
+
+
 template<typename T>
-class linked
-{
-	node <T>*head;
+struct node{
+	T data;
+	struct node<T>* next;
+};
+
+template<class T>
+class linked {
+	node<T>* head;
 public:
 	linked();
-
-	T isempty();
-
-	node <T>* getnode(T x);
-	void insert_first(T x);
-	T del_first();
-	T display_first();
+	node<T> *getnode(T );
+	void insert_first(T );
+	T delete_first();
+	T  show_head();
+	void display();
+	bool empty();
 	virtual ~linked();
 };
+
 
 #endif /* LINKED_H_ */
