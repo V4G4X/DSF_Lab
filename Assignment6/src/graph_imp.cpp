@@ -68,6 +68,8 @@ bool User::create_friendlist(int n){
 	int i;
 		for(i=0 ; i<n ; i++){
 			int j;
-			for(j=0 ; i< )
+			for(j=0 ; i< i ; j++ ){
+
+			}
 		}
 }

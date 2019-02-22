@@ -1,9 +1,9 @@
-//============================================================================
+//=============================================================
 // Name        : Priority_Queue.cpp
 // Author      : Varun Gawande
 // Copyright   : Your copyright notice
 // Description : Hospital Priority Queue in C++, Ansi-style
-//============================================================================
+//=============================================================
 /*Disease List
 High Priority:
 	1. Accident
@@ -20,12 +20,11 @@ Low Priority
 	10.First CheckUp
  */
 
-#include <iostream>
-#include <iomanip>
-#include <ctime>
-#include <string.h>
-#include "PQ_ADT.h"
-#include "PQ_IMP.cpp"
+#include<iostream>
+#include<iomanip>
+#include<string.h>
+#include"PQ_ADT.h"
+#include"PQ_IMP.cpp"
 using namespace std;
 
 class Patient{
@@ -35,13 +34,16 @@ class Patient{
 	char diseaselist[11][50] = {"1. Accident","2. Hemorrhage","3. Heart Disease","4. Quarantine Scenario","5. LoveSick","6. Cancer","7. Diabetes","8. Cold","9. Viral","10.First CheckUp"};
 	int disease;
 	char priority;
+	static int count;
+	char uid[50];
 public:
 	void accept(){
 		cout<<"Enter Patient Name: ";
 		cin.getline(name,50);
-		time_t now = time(0);
-		char* uid = ctime(&now);
-		strcat(name,uid);
+		strcpy(uid,name);
+		char temp[50] = to_string(count);
+		strcat(uid,temp);
+		count++;
 		cout<<"Enter Patient Age: ";
 		cin>>age;
 		cin.ignore();
@@ -71,9 +73,9 @@ public:
 
 	void print(){
 		cout<<"Patient Name: "<<name<<endl;
+		cout<<"Patient ID: "<<uid<<endl;
 		cout<<"Patient Age: "<<age<<endl;
 		cout<<"Patient Address: "<<address<<endl;
-		//		cout<<"Patient Disease: "<<disease<<endl;
 		cout<<"Patient Disease: "<<diseaselist[disease-1]<<endl;
 	}
 
@@ -88,8 +90,12 @@ public:
 
 	const char* getName() const { return name; }
 
+	const char* getUID() const { return uid; }
+
 	char getPriority() const { return priority;	}
 };
+
+int Patient::count=19;
 
 int main() {
 	Patient p;
@@ -130,9 +136,9 @@ int main() {
 				int l;
 				Patient* arr=pq.getVector(l);
 				int i;
-				cout<<"Name"<<setw(15)<<"Age"<<setw(4)<<"Address"<<setw(20)<<"Disease"<<setw(15)<<endl;
+				cout<<"Name"<<setw(15)<<"UID"<<setw(15)<<"Age"<<setw(4)<<"Address"<<setw(20)<<"Disease"<<setw(15)<<endl;
 				for(i=0 ; i<l ; i++)
-					cout<<arr[i].getName()<<setw(15)<<arr[i].getAge()<<setw(4)<<arr[i].getAddress()<<setw(20)<<arr[i].getDiseaselist(arr[i].getDisease()-1)<<setw(15)<<endl;
+					cout<<arr[i].getName()<<setw(15)<<arr[i].getUID()<<setw(15)<<arr[i].getAge()<<setw(4)<<arr[i].getAddress()<<setw(20)<<arr[i].getDiseaselist(arr[i].getDisease()-1)<<setw(15)<<endl;
 				break;
 			}
 			case 4:
