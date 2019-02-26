@@ -34,16 +34,13 @@ class Patient{
 	char diseaselist[11][50] = {"1. Accident","2. Hemorrhage","3. Heart Disease","4. Quarantine Scenario","5. LoveSick","6. Cancer","7. Diabetes","8. Cold","9. Viral","10.First CheckUp"};
 	int disease;
 	char priority;
-	static int count;
-	char uid[50];
+	int ID;
 public:
+	static int count;
 	void accept(){
 		cout<<"Enter Patient Name: ";
 		cin.getline(name,50);
-		strcpy(uid,name);
-		char temp[50] = to_string(count);
-		strcat(uid,temp);
-		count++;
+		ID=count++;
 		cout<<"Enter Patient Age: ";
 		cin>>age;
 		cin.ignore();
@@ -73,7 +70,7 @@ public:
 
 	void print(){
 		cout<<"Patient Name: "<<name<<endl;
-		cout<<"Patient ID: "<<uid<<endl;
+		cout<<"Patient ID: P"<<count<<endl;
 		cout<<"Patient Age: "<<age<<endl;
 		cout<<"Patient Address: "<<address<<endl;
 		cout<<"Patient Disease: "<<diseaselist[disease-1]<<endl;
@@ -90,7 +87,7 @@ public:
 
 	const char* getName() const { return name; }
 
-	const char* getUID() const { return uid; }
+	const int getID() const { return ID; }
 
 	char getPriority() const { return priority;	}
 };
@@ -138,7 +135,7 @@ int main() {
 				int i;
 				cout<<"Name"<<setw(15)<<"UID"<<setw(15)<<"Age"<<setw(4)<<"Address"<<setw(20)<<"Disease"<<setw(15)<<endl;
 				for(i=0 ; i<l ; i++)
-					cout<<arr[i].getName()<<setw(15)<<arr[i].getUID()<<setw(15)<<arr[i].getAge()<<setw(4)<<arr[i].getAddress()<<setw(20)<<arr[i].getDiseaselist(arr[i].getDisease()-1)<<setw(15)<<endl;
+					cout<<setw(15)<<arr[i].getName()<<"P"<<arr[i].getID()<<setw(15)<<arr[i].getAge()<<setw(4)<<arr[i].getAddress()<<setw(20)<<arr[i].getDiseaselist(arr[i].getDisease()-1)<<setw(15)<<endl;
 				break;
 			}
 			case 4:
@@ -162,7 +159,7 @@ Enter a choice
 1
 Enter Patient Name: Varun
 Enter Patient Age: 19
-Enter Patient Address: KandaWalah
+Enter Patient Address: ssgsfhd
 
 High Priority:
 1. Accident
@@ -177,7 +174,8 @@ Low Priority
 8. Cold
 9. Viral
 10.First CheckUp
-Enter Patient Disease: 9
+Enter Patient Disease: 8
+Priority Data was tampered with
 Enter a choice
 1.Add Customer
 2.Serve Customer
@@ -186,7 +184,79 @@ Enter a choice
 1
 Enter Patient Name: Jash
 Enter Patient Age: 20
-Enter Patient Address: Handi
+Enter Patient Address: gsdfsd
+
+High Priority:
+1. Accident
+2. Hemorrhage(Internal Bleeding)
+3. Heart Disease
+4. Quarantine Scenario
+5. LoveSick
+Medium Priority:
+6. Cancer
+7. Diabetes
+Low Priority
+8. Cold
+9. Viral
+10.First CheckUp
+Enter Patient Disease: 6
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+1
+Enter Patient Name: Sampada
+Enter Patient Age: 18
+Enter Patient Address: gfgddb
+
+High Priority:
+1. Accident
+2. Hemorrhage(Internal Bleeding)
+3. Heart Disease
+4. Quarantine Scenario
+5. LoveSick
+Medium Priority:
+6. Cancer
+7. Diabetes
+Low Priority
+8. Cold
+9. Viral
+10.First CheckUp
+Enter Patient Disease: 3
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+1
+Enter Patient Name: Kabra
+Enter Patient Age: 18
+Enter Patient Address: gsgfdn
+
+High Priority:
+1. Accident
+2. Hemorrhage(Internal Bleeding)
+3. Heart Disease
+4. Quarantine Scenario
+5. LoveSick
+Medium Priority:
+6. Cancer
+7. Diabetes
+Low Priority
+8. Cold
+9. Viral
+10.First CheckUp
+Enter Patient Disease: 1
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+1
+Enter Patient Name: Akhil
+Enter Patient Age: 20
+Enter Patient Address: fdjkfdg
 
 High Priority:
 1. Accident
@@ -208,9 +278,9 @@ Enter a choice
 3.Display Queue
 4.Exit
 1
-Enter Patient Name: Sam
-Enter Patient Age: 20
-Enter Patient Address: Mananana
+Enter Patient Name: Uchchay
+Enter Patient Age: 19
+Enter Patient Address: hfdgjh
 
 High Priority:
 1. Accident
@@ -225,26 +295,29 @@ Low Priority
 8. Cold
 9. Viral
 10.First CheckUp
-Enter Patient Disease: 3
+Enter Patient Disease: 10
 Enter a choice
 1.Add Customer
 2.Serve Customer
 3.Display Queue
 4.Exit
 3
-Name            Age		Address             Disease
-Sam         	20		Mananana			4. Quarantine Scenario
-Jash            20		Handi             	8. Cold
-Varun           19		KandaWalah    		10.First CheckUp
+Name            UID            Age	Address             Disease
+Sampada			P21             18	gfgddb 				3. Heart Disease
+Kabra			P22            	18	gsgfdn   		 	1. Accident
+Jash			P20             20	gsdfsd       		6. Cancer
+Akhil			P23             20	fdjkfdg     		7. Diabetes
+Uchchay			P24 	        19	hfdgjh    			10.First CheckUp
 Enter a choice
 1.Add Customer
 2.Serve Customer
 3.Display Queue
 4.Exit
 2
-Patient Name: Sam
-Patient Age: 20
-Patient Address: Mananana
+Patient Name: Sampada
+Patient ID: P25
+Patient Age: 18
+Patient Address: gfgddb
 Patient Disease: 3. Heart Disease
 Enter a choice
 1.Add Customer
@@ -252,20 +325,44 @@ Enter a choice
 3.Display Queue
 4.Exit
 2
-Patient Name: Jash
-Patient Age: 20
-Patient Address: Handi
-Patient Disease: 7. Diabetes
+Patient Name: Kabra
+Patient ID: P25
+Patient Age: 18
+Patient Address: gsgfdn
+Patient Disease: 1. Accident
 Enter a choice
 1.Add Customer
 2.Serve Customer
 3.Display Queue
 4.Exit
 2
-Patient Name: Varun
+2Patient Name: Jash
+Patient ID: P25
+Patient Age: 20
+Patient Address: gsdfsd
+Patient Disease: 6. Cancer
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+
+2Patient Name: Akhil
+Patient ID: P25
+Patient Age: 20
+Patient Address: fdjkfdg
+Patient Disease: 7. Diabetes
+Enter a choice
+1.Add Customer
+2.Serve Customer
+3.Display Queue
+4.Exit
+
+Patient Name: Uchchay
+Patient ID: P25
 Patient Age: 19
-Patient Address: KandaWalah
-Patient Disease: 9. Viral
+Patient Address: hfdgjh
+Patient Disease: 10.First CheckUp
 Enter a choice
 1.Add Customer
 2.Serve Customer
@@ -280,5 +377,6 @@ Enter a choice
 4.Exit
 4
 Exiting Hospital Program
+
 
  * */

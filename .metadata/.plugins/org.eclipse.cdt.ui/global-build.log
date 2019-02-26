@@ -108,3 +108,45 @@ g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assi
                    ~~~~~~~~~^~~~~~~
 src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
 make: *** [src/Assignment2.o] Error 1
+11:07:32 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+11:11:11 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+../src/Assignment2.cpp: In member function ‘const int Patient::getID() const’:
+../src/Assignment2.cpp:90:35: error: ‘iD’ was not declared in this scope
+  const int getID() const { return iD; }
+                                   ^~
+../src/Assignment2.cpp:90:35: note: suggested alternative: ‘ID’
+  const int getID() const { return iD; }
+                                   ^~
+                                   ID
+make: *** [src/Assignment2.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Assignment2.o' failed
+11:11:24 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+Building file: ../src/Assignment2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment2.d" -MT"src/Assignment2.o" -o "src/Assignment2.o" "../src/Assignment2.cpp"
+Finished building: ../src/Assignment2.cpp
+ 
+Building target: Assignment2
+Invoking: GCC C++ Linker
+g++  -o "Assignment2"  ./src/Assignment2.o ./src/LL_IMP.o ./src/PQ_IMP.o   
+Finished building target: Assignment2
+ 
+11:11:55 **** Incremental Build of configuration Release for project Assignment2 ****
+make all 
+make: Nothing to be done for 'all'.
