@@ -1,25 +1,17 @@
-/*
- * stack.h
- *
- *  Created on: 21-Dec-2018
- *      Author: f10
- */
-
-#include "Linkedlist.cpp"
 #ifndef STACK_H_
 #define STACK_H_
 
-template<class T>
+#include "linkedlist.h"
+template <class T>
 class stack {
-	Linkedlist<T> l;
+	link <T> l1;
 public:
 	stack();
-	virtual ~stack();
-	void push(T);
+	void push(T x);
 	T pop();
+	bool isempty();
 	T peep();
-	char *display();
-	bool isEmpty();
+	virtual ~stack();
 };
 
 #endif /* STACK_H_ */
