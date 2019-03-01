@@ -20,5 +20,4 @@ public:
 
 	virtual ~link();
 };
-
 #endif /* LINK_H_ */
