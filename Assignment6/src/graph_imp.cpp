@@ -1,6 +1,5 @@
 /*
  * graph_imp.cpp
- *
  *  Created on: 15-Feb-2019
  *      Author: v4g4x
  */
@@ -66,10 +65,9 @@ char* User::generateID(){
 
 bool User::create_friendlist(int n){
 	int i;
-		for(i=0 ; i<n ; i++){
+		for(i=0 ; i < n ; i++){
 			int j;
-			for(j=0 ; i< i ; j++ ){
-
+			for(j=0 ; i < i ; j++){
 			}
 		}
 }
