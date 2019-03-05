@@ -19,11 +19,12 @@ typedef struct Date{
 }Date;
 
 class Frand{
+	User* fr;
 	int noc;
 	User* link;
 public:
 	Frand();
-	Frand(char name[],int noc);
+	Frand(User* fr,int com);
 	friend User;
 	friend FB;
 };
@@ -31,22 +32,25 @@ public:
 class User{
 	Date dob;
 	char *name;
-	SLL<Frand> friendlist;
 	char *uid;
+	User* nlink;
+	Frand* dlink;
 	char* generateID();
 public:
 	User();
 	User(Date dob, char name[]);
-	bool create_friendlist(int n);
+	bool addFriend(User* dost,int noc);
 	friend Frand;
 	friend FB;
 };
 
 class FB{
-	SLL<User*> userlist;
+	int len;			//Stores length of list;
+	User* userlist;
 public:
-	bool search(char name[]);
+	User* search(char name[]);
 	bool create_ulist(int n);
+	bool create_friendlist();
 	friend User;
 };
 
