@@ -31,15 +31,20 @@ private:
 	bool mir;				//0 for un-mirrored, 1 for mirrored
 	void inorder(Node<T> *node);
 	void inorder_nr();
+	void preOrder(Node<T> *node);
+	void preOrder_nr();
+	void postOrder(Node<T> *node);
+	void postOrder_nr();
 public:
 	BST();
 	BST(T data);
 	bool isEmpty();
 	bool isMirror();
-	bool insert(T data);
+	bool insert(T data);	//Inserts 1 if Data already exists, 0 if does not
 	bool search(T data);
 	BST<T>* mirror();
 	void display();
+	void display_nr();
 	void display_level();
 	T dlete(T data);
 	int height();

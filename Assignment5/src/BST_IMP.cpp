@@ -1,6 +1,5 @@
 /*
  * BST_IMP.cpp
- *
  *  Created on: 08-Feb-2019
  *      Author: v4g4x
  */
@@ -99,8 +98,7 @@ bool BST<T>::insert(T data){
 }
 
 //Returns 1 if Data exists, 0 if doesn't
-template<class T>
-bool BST<T>::search(T data){
+template<class T>bool BST<T>::search(T data){
 	Node<T>* temp = root;
 	while(1){
 		if(data>temp->data){
@@ -135,7 +133,19 @@ void BST<T>::display(){
 	//Inorder Traversal
 	if(!isEmpty()){
 		inorder(root);
-		PreOrder(root);
+		preOrder(root);
+		postOrder(root);
+	}
+}
+
+//Traverses all nodes in All Fashions: InOrder, PreOrder, PostOrder But Non-recursively
+template<class T>
+void BST<T>::display_nr(){
+	//Inorder Traversal
+	if(!isEmpty()){
+		inorder_nr();
+		preOrder_nr();
+		postOrder_nr();
 	}
 }
 
@@ -149,4 +159,22 @@ void BST<T>::inorder(Node<T>* node){
 		inorder(node->rchild);
 }
 
+//Recursively PreOrder Traversal
+template<class T>
+void BST<T>::preOrder(Node<T>* node){
+	cout<<"Data: "<<node->data<<"\t";
+	if(node->lchild!=NULL)					//Lchild exists
+		preOrder(node->lchild);
+	if(node->rchild!=NULL)					//Rchild exists
+		preOrder(node->rchild);
+}
 
+//Recursively PostOrder Traversal
+template<class T>
+void BST<T>::postOrder(Node<T>* node){
+	if(node->lchild!=NULL)					//Lchild exists
+		postOrder(node->lchild);
+	if(node->rchild!=NULL)					//Rchild exists
+		postOrder(node->rchild);
+	cout<<"Data: "<<node->data<<"\t";
+}
