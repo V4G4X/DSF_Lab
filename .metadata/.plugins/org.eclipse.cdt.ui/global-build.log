@@ -591,3 +591,20 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/gr
     ~~~~~^~~~~~~~~~~~~
 src/subdir.mk:21: recipe for target 'src/graph_imp.o' failed
 make: *** [src/graph_imp.o] Error 1
+13:10:58 **** Incremental Build of configuration Debug for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building file: ../src/graph_imp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
+Finished building: ../src/graph_imp.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 

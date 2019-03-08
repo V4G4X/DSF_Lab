@@ -212,7 +212,7 @@ char* FB::maxFriend(int &max){															//Implements BFS
 			count++;
 			if(visit[getIndex(temp2->fr)]==0)
 				q.push(temp2->fr);
-			temp2-=temp2->link;
+			temp2=temp2->link;
 		}
 		if(max<count){
 			max = count;
