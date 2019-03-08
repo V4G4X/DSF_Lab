@@ -1,55 +1,44 @@
 /*
- * BST_ADT.h
+ * Bst.h
  *
- *  Created on: 08-Feb-2019
- *      Author: v4g4x
+ *  Created on: 01-Feb-2019
+ *      Author: e9
  */
-#ifndef BST_ADT_H_
-#define BST_ADT_H_
-
+//Bst Adt
+#ifndef BST_H_
+#define BST_H_
 template<class T>
-class BST;
-
-template<class T>
-class Node{
-private:
-	Node* lchild;
+struct node
+{
 	T data;
-	Node* rchild;
-public:
-	friend class BST<T>;
-	Node();
-	Node(T data);
-	Node<T>* mirror_fun(Node<T>* node);
+	struct node<T> *lchild;
+	struct node<T> *rchild;
 };
-
-
 template<class T>
-class BST{
-private:
-	Node<T>* root;
-	bool mir;				//0 for un-mirrored, 1 for mirrored
-	void inorder(Node<T> *node);
-	void inorder_nr();
-	void preOrder(Node<T> *node);
-	void preOrder_nr();
-	void postOrder(Node<T> *node);
-	void postOrder_nr();
+class Bst {
+	node<T> *root;
 public:
-	BST();
-	BST(T data);
-	bool isEmpty();
-	bool isMirror();
-	bool insert(T data);	//Inserts 1 if Data already exists, 0 if does not
-	bool search(T data);
-	BST<T>* mirror();
-	void display();
-	void display_nr();
-	void display_level();
-	T dlete(T data);
-	int height();
+	Bst();
+	//virtual ~Bst();
+	node<T>* create_node(T x);
+	void create_tree();
+	void insert(node<T> *p);
+	void rec_create();
+	node<T>* rec_insert(node<T> *base,node<T> *p);
+	void searchbst(T key);
+	node<T>* search(node<T> *base,T key);
+	void call_inorder();
+	void inorder(node<T> *base);
+	void call_preorder();
+	void preorder(node<T> *base);
+	void call_postorder();
+	void postorder(node<T> *base);
+	void call_delete(T key);
+	node<T>* delete_node(node<T> *base,T key);
+	void call_mirror();
+	void mirror_bst(node<T> *base);
+	node<T>* find_min(node<T> *p);
+
 };
 
-
-
-#endif /* BST_ADT_H_ */
+#endif /* BST_H_ */

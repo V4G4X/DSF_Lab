@@ -6,7 +6,7 @@
 #ifndef GRAPH_H_
 #define GRAPH_H_
 #define MAX 50
-#include "LLADT.h"
+//#include "LLADT.h"
 
 class Frand;
 class User;
@@ -15,13 +15,13 @@ class FB;
 typedef struct Date{
 	int dd,mm,yy;
 	bool accept(int dd,int mm,int yy);
-	bool validate();
+//	bool validate();
 }Date;
 
 class Frand{
 	User* fr;
 	int noc;
-	User* link;
+	Frand* link;
 public:
 	Frand();
 	Frand(User* fr,int com);
@@ -47,10 +47,14 @@ public:
 class FB{
 	int len;			//Stores length of list;
 	User* userlist;
+	int getIndex(User* node);
 public:
 	User* search(char name[]);
 	bool create_ulist(int n);
 	bool create_friendlist();
+	void maxminComments(int &less0, char* least0 , int &large0 , char* largest0);
+	char* maxFriend(int &max);
+	void birthdayMonth(int m);
 	friend User;
 };
 

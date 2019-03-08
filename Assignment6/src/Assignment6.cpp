@@ -10,12 +10,31 @@
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	char name[50];
-	cin.getline(name,50);
-	time_t now = time(0);
-	char *st_name = ctime(&now);
-	strcat(name,st_name);
-	cout<<name<<endl;
+	cout<<"Welcome to FB sub-system\n";
+	do{
+		cout<<"1.Create Userlist\n2.Create Friend Relations\n3.Find User with Max Friends(Uses BFS)\n4.Find Max and Min Comments(Uses DFS)\n5.Find Users with Birthday this month\n6.Exit"<<endl;
+		int ch;
+		cin>>ch;
+		cin.ignore();
+		switch(ch){
+		case 1:
+
+			break;
+		case 2:
+
+			break;
+		case 3:
+
+			break;
+		case 4:
+
+			break;
+		case 5:
+
+			break;
+		default:
+			break;
+		}
+	}while(1);
 	return 0;
 }
