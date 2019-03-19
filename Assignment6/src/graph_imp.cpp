@@ -40,8 +40,13 @@ bool FB::create_ulist(int n){
 		}
 		dob.accept(dd,mm,yy);
 		User *u = new User(dob,name);
-		temp->nlink = u;
-		temp=temp->nlink;
+		if(i==0){ userlist = u;
+		temp = userlist;
+		}
+		else{
+			temp->nlink = u;
+			temp=temp->nlink;
+		}
 	}
 	return 0;
 }
@@ -76,7 +81,7 @@ User::User(Date dob, char name[]){
 char* User::generateID(){
 	time_t now = time(0);
 	uid = ctime(&now);
-	strcat(name,uid);
+	strcat(uid,name);
 	return uid;
 }
 
@@ -220,7 +225,7 @@ char* FB::maxFriend(int &max){															//Implements BFS
 		}
 	}
 	return name;
-/*	int* count = new int[len];
+	/*	int* count = new int[len];
 	for(int i=0 ; i< len ; i++){
 		Frand* temp2 = temp->dlink;
 		while(temp2){

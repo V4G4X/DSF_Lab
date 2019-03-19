@@ -22,5 +22,7 @@
 	<section name="OptionalMessageDialog.hide.">
 	</section>
 	<section name="completion_proposal_size">
+		<item value="256" key="size.y"/>
+		<item value="627" key="size.x"/>
 	</section>
 </section>
