@@ -36,6 +36,7 @@ class User{
 	User* nlink;
 	Frand* dlink;
 	char* generateID();
+	bool friendExists(char *name);
 public:
 	User();
 	User(Date dob, char name[]);

@@ -72,7 +72,8 @@ User::User(){
 
 User::User(Date dob, char name[]){
 	this->dob = dob;
-	this->name = name;
+	this->name = new char[MAX];
+	strcpy(this->name,name);
 	generateID();
 	nlink = NULL;
 	dlink = NULL;
@@ -85,16 +86,31 @@ char* User::generateID(){
 	return uid;
 }
 
+bool User::friendExists(char *name){
+	User* temp = this;
+	while(temp){
+		if(strcasecmp(temp->name,name)==0)
+			return 1;
+		temp = temp->dlink->fr;
+	}
+	return 0;
+}
+
 bool User::addFriend(User* dost,int noc){
 	//If "User:.addFriend("Dost",noc) this will add Dost in User's friend list and noc is no. of comments by dost on User
 	Frand* temp = dlink;
-	while(temp->link){
-		if(strcasecmp(temp->fr->name,dost->name)==0)
-			return 1;
-		temp=temp->link;
+	if(temp!=NULL){
+		while(temp->link){
+			if(strcasecmp(temp->fr->name,dost->name)==0)
+				return 1;
+			temp=temp->link;
+		}
+		//Now temp is last adjacent node
+		temp->link = new Frand(dost,noc);
 	}
-	//Now temp is last adjacent node
-	temp->link = new Frand(dost,noc);
+	else{ //Adding a friend for the first time
+		dlink = new Frand(dost,noc);
+	}
 	return 0;
 }
 
@@ -128,9 +144,14 @@ bool FB::create_friendlist(){
 	for(i=0 ; i < len ; i++){				//Traverses to each user
 		cout<<"Enter No. of Friends of "<<temp->name<<": ";
 		cin>>c;
+		cin.ignore();
 		for(j=0 ; j<c ; j++){
 			cout<<"Enter name of friend "<<(j+1)<<": ";
 			char naam[MAX];
+			if(temp->friendExists(naam)){
+				cout<<"This Friend relationship is already added.\nDO NOT ADD again\n";
+				continue;
+			}
 			cin.getline(naam,MAX);
 			User* dost = search(naam);
 			if(dost==NULL){
