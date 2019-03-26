@@ -11,7 +11,7 @@
 #include <iostream>
 
 typedef struct Record{
-	long int phoneNo = 111111111;
+	long int phoneNo = 99999;
 	char name[50] = "#########";
 	int rollNo = 11111;
 	int chain = -2;
@@ -23,6 +23,7 @@ private:
 	int len = 10;
 	Record* hTable = new Record[len];
 public:
+	void printTable();
 	void insert();
 	void insertReplace();
 	Record search(long int phoneNo);

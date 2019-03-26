@@ -7,9 +7,17 @@
 //============================================================================
 
 #include <iostream>
+#include "Hash.h"
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	Hash hTable;
+	hTable.insert();
+	hTable.insert();
+	hTable.insert();
+	hTable.insert();
+	hTable.insert();
+	hTable.insert();
+	hTable.printTable();
 	return 0;
 }

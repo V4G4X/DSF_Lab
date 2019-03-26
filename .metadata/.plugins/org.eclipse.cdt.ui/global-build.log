@@ -1,144 +1,225 @@
-22:38:59 **** Incremental Build of configuration Release for project Assignment6 ****
-make all 
-Building file: ../src/Assignment6.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
-Finished building: ../src/Assignment6.cpp
- 
-Building file: ../src/graph_imp.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
- 
-Building target: Assignment6
-Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
- 
-22:39:03 **** Incremental Build of configuration Debug for project Assignment6 ****
-make all 
-Building file: ../src/graph_imp.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
- 
-Building target: Assignment6
-Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
- 
-22:39:53 **** Incremental Build of configuration Release for project Assignment6 ****
-make all 
-Building file: ../src/graph_imp.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
- 
-Building target: Assignment6
-Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
- 
-22:39:55 **** Incremental Build of configuration Debug for project Assignment6 ****
-make all 
-Building file: ../src/graph_imp.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
- 
-Building target: Assignment6
-Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
- 
-22:40:48 **** Incremental Build of configuration Debug for project Assignment6 ****
+12:32:38 **** Incremental Build of configuration Release for project Assignment9 ****
 make all 
 make: Nothing to be done for 'all'.
-22:41:00 **** Incremental Build of configuration Debug for project Assignment6 ****
+12:32:41 **** Incremental Build of configuration Release for project Assignment9 ****
 make all 
 make: Nothing to be done for 'all'.
-22:49:00 **** Incremental Build of configuration Debug for project Assignment6 ****
+12:34:13 **** Incremental Build of configuration Release for project Assignment9 ****
 make all 
-Building file: ../src/graph_imp.cpp
+make: Nothing to be done for 'all'.
+12:34:25 **** Incremental Build of configuration Release for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:34:41 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:34:52 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:36:14 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:39:38 **** Incremental Build of configuration Release for project Assignment9 ****
+make all 
+Building file: ../src/Hash.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
  
-Building target: Assignment6
+Building target: Assignment9
 Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
  
-23:34:13 **** Build of configuration Release for project Assignment6 ****
+12:39:53 **** Incremental Build of configuration Debug for project Assignment9 ****
 make all 
-Building file: ../src/Assignment6.cpp
+Building file: ../src/Hash.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
-Finished building: ../src/Assignment6.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
  
-Building file: ../src/graph_imp.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-../src/graph_imp.cpp: In member function ‘bool User::friendExists(char*)’:
-../src/graph_imp.cpp:94:26: error: ‘s’ was not declared in this scope
-   temp = temp->dlink->fr;s
-                          ^
-src/subdir.mk:21: recipe for target 'src/graph_imp.o' failed
-make: *** [src/graph_imp.o] Error 1
-23:34:22 **** Incremental Build of configuration Release for project Assignment6 ****
-make all 
-Building file: ../src/graph_imp.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
- 
-Building target: Assignment6
+Building target: Assignment9
 Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
  
-23:35:54 **** Clean-only build of configuration Debug for project Assignment6 ****
-make clean 
-rm -rf  ./src/Assignment6.o ./src/graph_imp.o  ./src/Assignment6.d ./src/graph_imp.d  Assignment6
- 
-23:35:54 **** Incremental Build of configuration Debug for project Assignment6 ****
+12:43:38 **** Incremental Build of configuration Release for project Assignment9 ****
 make all 
-Building file: ../src/Assignment6.cpp
+Building file: ../src/Assignnment9.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
-Finished building: ../src/Assignment6.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
  
-Building file: ../src/graph_imp.cpp
+Building file: ../src/Hash.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
  
-Building target: Assignment6
+Building target: Assignment9
 Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
  
-23:58:10 **** Incremental Build of configuration Release for project Assignment6 ****
+12:43:54 **** Incremental Build of configuration Debug for project Assignment9 ****
 make all 
-Building file: ../src/graph_imp.cpp
+Building file: ../src/Assignnment9.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
  
-Building target: Assignment6
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
 Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
  
-23:58:30 **** Incremental Build of configuration Debug for project Assignment6 ****
+12:44:25 **** Incremental Build of configuration Debug for project Assignment9 ****
 make all 
-Building file: ../src/graph_imp.cpp
+make: Nothing to be done for 'all'.
+12:45:07 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:46:16 **** Incremental Build of configuration Release for project Assignment9 ****
+make all 
+Building file: ../src/Assignnment9.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph_imp.d" -MT"src/graph_imp.o" -o "src/graph_imp.o" "../src/graph_imp.cpp"
-Finished building: ../src/graph_imp.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
  
-Building target: Assignment6
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
 Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+12:46:22 **** Incremental Build of configuration Release for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:46:25 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Assignnment9.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
+ 
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+12:46:55 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Assignnment9.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+12:47:21 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:47:36 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:47:38 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+make: Nothing to be done for 'all'.
+12:50:26 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+12:51:25 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Assignnment9.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
+ 
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+12:51:53 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Assignnment9.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+12:52:51 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+12:53:10 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+12:55:05 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Assignnment9.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
+ 
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
  
