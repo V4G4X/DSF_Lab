@@ -19,6 +19,8 @@
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
+	<section name="PDOMSearchPage">
+	</section>
 	<section name="OptionalMessageDialog.hide.">
 	</section>
 	<section name="completion_proposal_size">

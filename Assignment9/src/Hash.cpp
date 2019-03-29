@@ -33,51 +33,6 @@ void Hash::insert(){
 	Record r;								//Enter Data
 	cout<<"Enter Phone Number: ";
 	cin>>r.phoneNo;
-	cin.ignore();
-//	cout<<"Enter Name: ";
-//	cin.getline(r.name,50);
-//	cout<<"Enter Roll No.: ";
-//	cin>>r.rollNo;
-//	cin.ignore();
-	r.chain=-1;
-
-	int hKey= r.phoneNo%len;							//Calculate HashKey
-	if(hTable[hKey].chain==-2)							//Enter Record as-is if location is Empty i.e Record doesn't exist
-		hTable[hKey] = r;
-	else if(hKey==hTable[hKey].phoneNo%len){			//If a record exists, AND if bucket matches
-		while(hTable[hKey].chain!=-1)						//Move to end of chain of current bucket
-			hKey = hTable[hKey].chain;
-		int prev = hKey;									//Then store current index
-		while(hTable[hKey].chain!=-2)						//Look for subsequent empty record
-			hKey = (hKey+1)%len;
-		hTable[hKey] = r;									//Store our record in It
-		hTable[prev].chain = hKey;							//Let the previous record know where the next one is
-	}
-	else{												//If a Record exists BUT Bucket doesn't match
-		while(hTable[hKey].chain!=-2 && (hTable[hKey].phoneNo%len!=r.phoneNo%len))//Probe forward to look for empty record OR chain beginning
-			hKey = (hKey+1)%len;
-		if(hTable[hKey].phoneNo%len==r.phoneNo%len){		//Found Beginning of chain
-			while(hTable[hKey].chain!=-1)					//Move till end of chain
-				hKey = hTable[hKey].chain;
-			int prev = hKey;								//Then store current index
-			while(hTable[hKey].chain!=-2)					//Look for subsequent empty record
-				hKey = (hKey+1)%len;
-			hTable[hKey] = r;								//Store our record in It
-			hTable[prev].chain = hKey;						//Let the previous record know where the next one is
-		}
-		hTable[hKey] = r;									//Store our record in It
-	}
-	rec++;												//Increment record count by 1
-}
-
-void Hash::insertReplace(){
-	if(isFull()){
-		cout<<"Hash Table is Full"<<endl;
-		return;
-	}
-	Record r;								//Enter Data
-	cout<<"Enter Phone Number: ";
-	cin>>r.phoneNo;
 //	cin.ignore();
 //	cout<<"Enter Name: ";
 //	cin.getline(r.name,50);
@@ -130,14 +85,6 @@ Record Hash::search(long int phoneNo){
 }
 
 void Hash::dlete(long int phoneNo){
-	if(isEmpty()){
-		cout<<"Hash Table is Empty"<<endl;
-		return;
-	}
-
-}
-
-void Hash::dleteReplace(long int phoneNo){
 	if(isEmpty()){
 		cout<<"Hash Table is Empty"<<endl;
 		return;
