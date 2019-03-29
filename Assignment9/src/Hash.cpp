@@ -70,34 +70,6 @@ void Hash::insert(){
 	rec++;												//Increment record count by 1
 }
 
-Record Hash::search(long int phoneNo){
-	Record *r = NULL;
-	int hKey = phoneNo%len;
-	*r=hTable[hKey];
-	while(r->phoneNo!=phoneNo){
-		if(r->chain==-1 || r->chain==-2)
-			return *(new Record);
-		hKey = r->chain;
-		*r=hTable[hKey];
-	}
-	return *r;
-}
-
-void Hash::dlete(long int phoneNo){
-	if(isEmpty()){
-		cout<<"Hash Table is Empty"<<endl;
-		return;
-	}
-	int hKey = phoneNo%len;
-	while(hTable[hKey].phoneNo!=phoneNo){
-		if(hTable[hKey].chain==-1 || hTable[hKey].chain==-2)
-			return;
-		hKey = hTable[hKey].chain;
-	}
-	hTable[hKey] = *(new Record);
-	rec--;									//Decrement record count by 1
-}
-
 void Hash::insertReplace(){
 	if(isFull()){
 		cout<<"Hash Table is Full"<<endl;
@@ -116,7 +88,7 @@ void Hash::insertReplace(){
 
 	int hKey = r.phoneNo%len;
 	if(hTable[hKey].chain!=-2){						//A record already exists
-		if(hKey == hTable[hKey].phoneNo%len){			//Record part of same bucket
+		if(hKey == hTable[hKey].phoneNo%len){			//Record is part of same bucket
 			while(hTable[hKey].chain!=-1)					//Move till end of bucket's chain
 				hKey = hTable[hKey].chain;
 			int prev = hKey;
@@ -126,7 +98,16 @@ void Hash::insertReplace(){
 			hTable[prev].chain = hKey;
 		}
 		else{											//Records are of different buckets
-
+			Record temp = hTable[hKey];
+			int newKey = temp.phoneNo%len;
+			while(hTable[hTable[newKey].chain].phoneNo!=temp.phoneNo)	//Traverse till newKey is index of just before the node to be moved
+				newKey = hTable[newKey].chain;
+			int prev = newKey;
+			while(hTable[newKey].chain!=-2)					//Probe for an empty record
+				newKey = (newKey+1)%len;
+			hTable[newKey] = temp;							//Copy record to new empty place
+			hTable[prev].chain = newKey;					//Let previous node of chain know of new location
+			hTable[hKey] = r;
 		}
 	}
 	else{											//Empty Record available
@@ -134,3 +115,45 @@ void Hash::insertReplace(){
 	}
 	rec++;
 }
+
+Record Hash::search(long int phoneNo){
+	Record r ;
+	int hKey = phoneNo%len;						//Find HashKey of required record
+	r=hTable[hKey];
+	while(r.phoneNo!=phoneNo){
+		if(r.chain==-1 || r.chain==-2)			//If chain ends and Record not found, return a blank one
+			return *(new Record);
+		hKey = r.chain;							//Move to next kink of Chain
+		r=hTable[hKey];
+	}
+	return r;
+}
+
+void Hash::dlete(long int phoneNo){
+	if(isEmpty()){
+		cout<<"Hash Table is Empty"<<endl;
+		return;
+	}
+
+}
+
+void Hash::dleteReplace(long int phoneNo){
+	if(isEmpty()){
+		cout<<"Hash Table is Empty"<<endl;
+		return;
+	}
+	int prev=-1;
+	int hKey = phoneNo%len;							//Find hashKey of record to be deleted
+	while(hTable[hKey].phoneNo!=phoneNo){
+		if(hTable[hKey].chain==-1 || hTable[hKey].chain==-2)//if chain ends without kink found, it's absent
+			return;
+		prev = hKey;
+		hKey = hTable[hKey].chain;					//Move to next kink in chain
+	}
+	if(prev!=-1)							//The node to be deleted is not at the beginning
+		hTable[prev].chain = hTable[hKey].chain;
+	hTable[hKey] = *(new Record);
+	rec--;									//Decrement record count by 1
+}
+
+

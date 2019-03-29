@@ -12,12 +12,12 @@ using namespace std;
 
 int main() {
 	Hash hTable;
-	hTable.insert();
-	hTable.insert();
-	hTable.insert();
-	hTable.insert();
-	hTable.insert();
-	hTable.insert();
+	hTable.insertReplace();
+	hTable.insertReplace();
+	hTable.insertReplace();
+	hTable.insertReplace();
+	hTable.insertReplace();
+	hTable.insertReplace();
 	hTable.printTable();
 	return 0;
 }

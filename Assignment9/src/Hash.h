@@ -11,9 +11,9 @@
 #include <iostream>
 
 typedef struct Record{
-	long int phoneNo = 99999;
+	long int phoneNo = 999;
 	char name[50] = "#########";
-	int rollNo = 11111;
+	int rollNo = 111;
 	int chain = -2;
 }Record;
 
@@ -22,14 +22,15 @@ private:
 	int rec=0;
 	int len = 10;
 	Record* hTable = new Record[len];
+	bool isFull();
+	bool isEmpty();
 public:
 	void printTable();
 	void insert();
 	void insertReplace();
 	Record search(long int phoneNo);
 	void dlete(long int phoneNo);
-	bool isFull();
-	bool isEmpty();
+	void dleteReplace(long int phoneNo);
 };
 
 #endif /* HASH_H_ */

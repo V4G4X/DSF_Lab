@@ -223,3 +223,27 @@ Invoking: GCC C++ Linker
 g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
 Finished building target: Assignment9
  
+19:11:14 **** Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Hash.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hash.d" -MT"src/Hash.o" -o "src/Hash.o" "../src/Hash.cpp"
+Finished building: ../src/Hash.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
+19:12:04 **** Incremental Build of configuration Debug for project Assignment9 ****
+make all 
+Building file: ../src/Assignnment9.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignnment9.d" -MT"src/Assignnment9.o" -o "src/Assignnment9.o" "../src/Assignnment9.cpp"
+Finished building: ../src/Assignnment9.cpp
+ 
+Building target: Assignment9
+Invoking: GCC C++ Linker
+g++  -o "Assignment9"  ./src/Assignnment9.o ./src/Hash.o   
+Finished building target: Assignment9
+ 
