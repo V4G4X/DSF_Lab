@@ -14,7 +14,7 @@ int main() {
 	cout<<"Welcome to FB sub-system\n";
 	int ch;
 	do{
-		cout<<"1.Create User List\n2.Create Friend Relations\n3.Find User with Max Friends(Uses BFS)\n4.Find Max and Min Comments(Uses DFS)\n5.Find Users with Birthday this month\n6.Exit"<<endl;
+		cout<<"1.Create User List\n2.Create Friend Relations\n3.Find User with Max Friends(Uses BFS)\n4.Find Max and Min Comments(Uses DFS)\n5.Find Users with Birthday this month\n6.Print Adjacency List\n7.Exit"<<endl;
 		FB network;
 		cin>>ch;
 		cin.ignore();
@@ -32,17 +32,17 @@ int main() {
 			break;
 		}
 		case 3:{
-			int max;
+			int max=0;
 			char *maxFriend = network.maxFriend(max);
-			cout<<maxFriend<<"has most friends i.e"<<max<<".\n";
+			cout<<maxFriend<<" has most friends i.e "<<max<<".\n";
 			break;
 		}
 		case 4:{
-			int less,large;
+			int less=0,large=0;
 			char *least=NULL,*largest=NULL;
 			network.maxminComments(less,least,large,largest);
-			cout<<least<<"has least comments i.e"<<less<<".\n";
-			cout<<largest<<"has most comments i.e"<<large<<".\n";
+			cout<<least<<" has least comments i.e "<<less<<".\n";
+			cout<<largest<<" has most comments i.e "<<large<<".\n";
 			break;
 		}
 		case 5:{
@@ -54,6 +54,10 @@ int main() {
 			break;
 		}
 		case 6:{
+			network.printList();
+			break;
+		}
+		case 7:{
 			cout<<"Exiting Program\n";
 			break;
 		}
@@ -62,6 +66,6 @@ int main() {
 			break;
 		}
 		}
-	}while(ch!=6);
+	}while(ch!=7);
 	return 0;
 }

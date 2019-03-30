@@ -72,14 +72,20 @@ void HashNR::insert(){
 
 RecordNR HashNR::search(long int phoneNo){
 	RecordNR r ;
-	int hKey = phoneNo%len;						//Find HashKey of required RecordNR
-	r=hTable[hKey];
-	while(r.phoneNo!=phoneNo){
-		if(r.chain==-1 || r.chain==-2)			//If chain ends and RecordNR not found, return a blank one
+	int prev = -1;
+	int hKey = phoneNo%len;
+	while((phoneNo%len)!=(hTable[hKey].phoneNo%len))	//Linearly Probe for matching bucket
+		hKey++;
+	//hKey is now at matching bucket, and beginning of chain
+	while(hTable[hKey].phoneNo!=phoneNo){
+		if(hTable[hKey].chain==-1 || hTable[hKey].chain==-2)//if chain ends without kink found, it's absent
 			return *(new RecordNR);
-		hKey = r.chain;							//Move to next kink of Chain
-		r=hTable[hKey];
+		prev = hKey;
+		hKey = hTable[hKey].chain;					//Move to next kink in chain
 	}
+	if(prev!=-1)							//The node to be deleted is not at the beginning
+		hTable[prev].chain = hTable[hKey].chain;
+	r = hTable[hKey];
 	return r;
 }
 

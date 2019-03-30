@@ -22,9 +22,9 @@ private:
 	int rec=0;
 	int len = 10;
 	Record* hTable = new Record[len];
+public:
 	bool isFull();
 	bool isEmpty();
-public:
 	void printTable();
 	void insert();
 	Record search(long int phoneNo);

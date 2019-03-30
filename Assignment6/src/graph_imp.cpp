@@ -87,13 +87,21 @@ char* User::generateID(){
 }
 
 bool User::friendExists(char *name){
-	User* temp = this;
+	Frand* temp = this->dlink;
 	while(temp){
-		if(strcasecmp(temp->name,name)==0)
+		if(strcasecmp(temp->fr->name,name)==0)
 			return 1;
-		temp = temp->dlink->fr;
+		temp = temp->link;
 	}
 	return 0;
+}
+
+void Frand::printFriends(){
+	Frand *temp = this;
+	while(temp){
+		cout<<"<<<<"<<temp->fr->name<<"("<<temp->noc<<")";
+		temp=temp->link;
+	}
 }
 
 bool User::addFriend(User* dost,int noc){
@@ -116,7 +124,7 @@ bool User::addFriend(User* dost,int noc){
 
 int FB::getIndex(User* node){
 	User* temp = userlist;
-	int i;
+	int i=0;
 	while(temp){
 		if(node==temp)
 			return i;
@@ -148,11 +156,11 @@ bool FB::create_friendlist(){
 		for(j=0 ; j<c ; j++){
 			cout<<"Enter name of friend "<<(j+1)<<": ";
 			char naam[MAX];
-			if(temp->friendExists(naam)){
-				cout<<"This Friend relationship is already added.\nDO NOT ADD again\n";
+			cin.getline(naam,MAX);
+			if(temp->friendExists(naam) || strcasecmp(naam,temp->name)==0 ){
+				cout<<"This Friend relationship is already added OR is same name as User.\nDONT ADD Friend again\n";
 				continue;
 			}
-			cin.getline(naam,MAX);
 			User* dost = search(naam);
 			if(dost==NULL){
 				cout<<"The entered User does not exist, moving on to Next"<<endl;
@@ -169,6 +177,7 @@ bool FB::create_friendlist(){
 			dost->addFriend(temp,b);
 			temp->addFriend(dost,a);
 		}
+		temp = temp->nlink;
 	}
 	return 0;
 }
@@ -181,11 +190,11 @@ bool node_unvisited(bool *arr,int len){
 	return 0;
 }
 
-void FB::maxminComments(int &less0, char* least0 , int &large0 , char* largest0){		//Implements DFS
+void FB::maxminComments(int &less0, char* &least0 , int &large0 , char* &largest0){		//Implements DFS
 	stack<User*> st;
 	User* temp = userlist;
-	int *count = new int[len];
-	bool *visit = new bool[len];
+	int *count = new int[len];		for(int i=0 ; i<len ; i++)		count[i] = 0;
+	bool *visit = new bool[len];	for(int i=0 ; i<len ; i++)		visit[i] = 0;
 	st.push(temp);
 	while(node_unvisited(visit,len)){
 		User *temp2 = st.top();
@@ -195,7 +204,8 @@ void FB::maxminComments(int &less0, char* least0 , int &large0 , char* largest0)
 		visit[v] = 1;
 		Frand* temp3 = temp2->dlink;
 		while(temp3){
-			st.push(temp3->fr);
+			if(!visit[getIndex(temp3->fr)])
+				st.push(temp3->fr);
 			int index = getIndex(temp3->fr);
 			count[index]+=temp3->noc;
 			temp3=temp3->link;
@@ -217,8 +227,10 @@ void FB::maxminComments(int &less0, char* least0 , int &large0 , char* largest0)
 		}
 		temp=temp->nlink;
 	}
-	cout<<largest->name<<" has most comments with "<<large<<" no. of comments"<<endl;
-	cout<<least->name<<" has least comments with "<<less<<" no. of comments"<<endl;\
+//	cout<<largest->name<<" has most comments with "<<large<<" no. of comments"<<endl;
+//	cout<<least->name<<" has least comments with "<<less<<" no. of comments"<<endl;
+	least0 	 = 	new char[MAX];
+	largest0 = 	new char[MAX];
 	less0=less;		strcpy(least0,least->name);
 	large0=large;	strcpy(largest0,largest->name);
 }
@@ -226,6 +238,7 @@ void FB::maxminComments(int &less0, char* least0 , int &large0 , char* largest0)
 char* FB::maxFriend(int &max){															//Implements BFS
 	User* temp = userlist;
 	bool *visit = new bool[len];
+	for(int i=0 ; i<len ; i++)	visit[i] = 0;
 	char *name = new char[MAX];
 	queue<User*> q;
 	q.push(temp);
@@ -244,6 +257,7 @@ char* FB::maxFriend(int &max){															//Implements BFS
 			max = count;
 			name = strcpy(name,temp->name);
 		}
+		visit[getIndex(temp)] = 1;
 	}
 	return name;
 	/*	int* count = new int[len];
@@ -278,4 +292,14 @@ void FB::birthdayMonth(int m){
 	}
 	if(!flag)
 		cout<<"There were no Birthdays this month\n";
+}
+
+void FB::printList(){
+	User* temp = userlist;
+	while(temp){
+		cout<<temp->name;
+		temp->dlink->printFriends();
+		cout<<endl;
+		temp=temp->nlink;
+	}
 }

@@ -27,6 +27,7 @@ public:
 	Frand(User* fr,int com);
 	friend User;
 	friend FB;
+	void printFriends();
 };
 
 class User{
@@ -50,10 +51,11 @@ class FB{
 	User* userlist;
 	int getIndex(User* node);
 public:
+	void printList();
 	User* search(char name[]);
 	bool create_ulist(int n);
 	bool create_friendlist();
-	void maxminComments(int &less0, char* least0 , int &large0 , char* largest0);
+	void maxminComments(int &less0, char* &least0 , int &large0 , char* &largest0);
 	char* maxFriend(int &max);
 	void birthdayMonth(int m);
 	friend User;

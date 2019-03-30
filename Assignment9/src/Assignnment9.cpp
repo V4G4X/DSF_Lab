@@ -49,11 +49,15 @@ int main() {
 			cin>>phoneNo;
 			if(hTable){			//With Replacement
 				Record r = hTable->search(phoneNo);
-				cout<<r.name<<"\t"<<r.rollNo<<"\t"<<r.phoneNo<<endl;
+				if(r.chain!=-2)
+					cout<<r.name<<"\t"<<r.rollNo<<"\t"<<r.phoneNo<<endl;
+				else	cout<<"Record doesn't exist"<<endl;
 			}
 			else{				//Without Replacement
 				RecordNR r = hTableNR->search(phoneNo);
-				cout<<r.name<<"\t"<<r.rollNo<<"\t"<<r.phoneNo<<endl;
+				if(r.chain!=-2)
+					cout<<r.name<<"\t"<<r.rollNo<<"\t"<<r.phoneNo<<endl;
+				else	cout<<"Record doesn't exist"<<endl;
 			}
 			break;
 		}
