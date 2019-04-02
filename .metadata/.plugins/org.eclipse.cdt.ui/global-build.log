@@ -48,3 +48,18 @@ Invoking: GCC C++ Linker
 g++  -o "Assignment12"  ./src/Assignment12.o ./src/DAFAdt.o   
 Finished building target: Assignment12
  
+12:51:03 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+Building file: ../src/Assignment6.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
+Finished building: ../src/Assignment6.cpp
+ 
+Building target: Assignment6
+Invoking: GCC C++ Linker
+g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
+Finished building target: Assignment6
+ 
+12:55:05 **** Incremental Build of configuration Release for project Assignment6 ****
+make all 
+make: Nothing to be done for 'all'.
