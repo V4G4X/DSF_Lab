@@ -1,65 +1,31 @@
-12:14:56 **** Incremental Build of configuration Release for project Assignment12 ****
+11:54:40 **** Incremental Build of configuration Release for project Assignment11 ****
 make all 
-Building file: ../src/Assignment12.cpp
+Building file: ../src/Assignment11.cpp
 Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment12.d" -MT"src/Assignment12.o" -o "src/Assignment12.o" "../src/Assignment12.cpp"
-Finished building: ../src/Assignment12.cpp
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment11.d" -MT"src/Assignment11.o" -o "src/Assignment11.o" "../src/Assignment11.cpp"
+../src/Assignment11.cpp: In function ‘int main()’:
+../src/Assignment11.cpp:133:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+     for(i=0;i<n;i++)
+     ^~~
+../src/Assignment11.cpp:136:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  do
+  ^~
+Finished building: ../src/Assignment11.cpp
  
-Building target: Assignment12
+Building target: Assignment11
 Invoking: GCC C++ Linker
-g++  -o "Assignment12"  ./src/Assignment12.o ./src/DAFAdt.o   
-Finished building target: Assignment12
+g++  -o "Assignment11"  ./src/Assignment11.o   
+Finished building target: Assignment11
  
-12:28:40 **** Incremental Build of configuration Release for project Assignment12 ****
+11:55:00 **** Incremental Build of configuration Release for project Assignment11 ****
 make all 
-Building file: ../src/Assignment12.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment12.d" -MT"src/Assignment12.o" -o "src/Assignment12.o" "../src/Assignment12.cpp"
-Finished building: ../src/Assignment12.cpp
- 
-Building file: ../src/DAFAdt.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DAFAdt.d" -MT"src/DAFAdt.o" -o "src/DAFAdt.o" "../src/DAFAdt.cpp"
-../src/DAFAdt.cpp: In member function ‘int DAFAdt::update_chain(int, int, int)’:
-../src/DAFAdt.cpp:43:6: warning: unused variable ‘R1’ [-Wunused-variable]
-  Rec R1;
-      ^~
-../src/DAFAdt.cpp: In member function ‘void DAFAdt::Create()’:
-../src/DAFAdt.cpp:50:12: warning: unused variable ‘n’ [-Wunused-variable]
-  int i, j, n, hash2;
-            ^
-../src/DAFAdt.cpp:51:16: warning: variable ‘flag1’ set but not used [-Wunused-but-set-variable]
-  int flag = 0, flag1 = 0;
-                ^~~~~
-../src/DAFAdt.cpp: In member function ‘void DAFAdt::Display(int)’:
-../src/DAFAdt.cpp:157:11: warning: unknown escape sequence: '\040'
-   cout << "\n\t Sr. No \t Emp _Id \t Name \ t Salary \n\t Chain \n\t";
-           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/DAFAdt.cpp:150:6: warning: unused variable ‘n’ [-Wunused-variable]
-  int n, i, j;
-      ^
-../src/DAFAdt.cpp:150:12: warning: unused variable ‘j’ [-Wunused-variable]
-  int n, i, j;
-            ^
-Finished building: ../src/DAFAdt.cpp
- 
-Building target: Assignment12
-Invoking: GCC C++ Linker
-g++  -o "Assignment12"  ./src/Assignment12.o ./src/DAFAdt.o   
-Finished building target: Assignment12
- 
-12:51:03 **** Incremental Build of configuration Release for project Assignment6 ****
+make: Nothing to be done for 'all'.
+11:56:21 **** Incremental Build of configuration Release for project Assignment11 ****
 make all 
-Building file: ../src/Assignment6.cpp
-Invoking: GCC C++ Compiler
-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment6.d" -MT"src/Assignment6.o" -o "src/Assignment6.o" "../src/Assignment6.cpp"
-Finished building: ../src/Assignment6.cpp
- 
-Building target: Assignment6
-Invoking: GCC C++ Linker
-g++  -o "Assignment6"  ./src/Assignment6.o ./src/graph_imp.o   
-Finished building target: Assignment6
- 
-12:55:05 **** Incremental Build of configuration Release for project Assignment6 ****
+make: Nothing to be done for 'all'.
+11:56:31 **** Incremental Build of configuration Release for project Assignment11 ****
+make all 
+make: Nothing to be done for 'all'.
+12:01:01 **** Incremental Build of configuration Release for project Assignment12 ****
 make all 
 make: Nothing to be done for 'all'.
